@@ -1,0 +1,554 @@
+fileFormatVersion: 2
+guid: a1cfc21c6848ba24db0ce694d6f50bf0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 256
+        width: 52
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a671394c58fcd4b8a71de2b9e04a22
+      internalID: 446692347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 254
+        width: 53
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ad5c0b325894742870c048dbd3f54e
+      internalID: -1600177068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 253
+        width: 44
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645f9b9d5b8a86f46ae13a7c621615f8
+      internalID: -1954866269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_3
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 253
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88ca54e54bc664449b68c5bd7cab3fe
+      internalID: -1887668320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_4
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 253
+        width: 65
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09b2dc7498a68348b6572ca44f58b4b
+      internalID: -953867543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_5
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 252
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476f28896cb0b254cb6cca1ed6683d46
+      internalID: -2134380765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_6
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 256
+        width: 48
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c454897c0f287eb40a7eee572c67d4ca
+      internalID: -222952914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_7
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 199
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff977a9f304389d4eac2d5f2eab5ea09
+      internalID: 1339247656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_8
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 199
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65475ba417465294099d4eecc9c5f37c
+      internalID: 2143971019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_9
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 199
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9f0b9df4f4d754e9cc08b34f360e3c
+      internalID: -492506152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 156
+        width: 76
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57f3661e6422874983da1e2ddb2ab2b
+      internalID: 46133072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_11
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 156
+        width: 76
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb01b245702667c4e867c4897643f59f
+      internalID: 529428768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_12
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 156
+        width: 76
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4542f348b31e3ca4ea9e3149e71e7c01
+      internalID: -1288806585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_13
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 159
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ef4f6086790ea46bf021327a56efb0
+      internalID: -2068234300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_14
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 159
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6e3f1d71053a2408bd957a62824c69
+      internalID: -1498176111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_15
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 155
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77a848a4e16e734e8faf083dc8b12f7
+      internalID: -1216180535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_16
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 155
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f77cb729fd65bc49b6fd35a9368826c
+      internalID: -937965528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 160
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868ae55635d0a9d4d80ef954a71ba384
+      internalID: -1438201520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_18
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 8
+        width: 160
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fe304cac65dba4a910fda1f30ba471
+      internalID: 386628195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arab_stuff_sprite-resources.assets-2810_19
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 8
+        width: 160
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e10edba86db223408c5183b70bce3cd
+      internalID: -1617848384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      arab_stuff_sprite-resources.assets-2810_0: 446692347
+      arab_stuff_sprite-resources.assets-2810_1: -1600177068
+      arab_stuff_sprite-resources.assets-2810_10: 46133072
+      arab_stuff_sprite-resources.assets-2810_11: 529428768
+      arab_stuff_sprite-resources.assets-2810_12: -1288806585
+      arab_stuff_sprite-resources.assets-2810_13: -2068234300
+      arab_stuff_sprite-resources.assets-2810_14: -1498176111
+      arab_stuff_sprite-resources.assets-2810_15: -1216180535
+      arab_stuff_sprite-resources.assets-2810_16: -937965528
+      arab_stuff_sprite-resources.assets-2810_17: -1438201520
+      arab_stuff_sprite-resources.assets-2810_18: 386628195
+      arab_stuff_sprite-resources.assets-2810_19: -1617848384
+      arab_stuff_sprite-resources.assets-2810_2: -1954866269
+      arab_stuff_sprite-resources.assets-2810_3: -1887668320
+      arab_stuff_sprite-resources.assets-2810_4: -953867543
+      arab_stuff_sprite-resources.assets-2810_5: -2134380765
+      arab_stuff_sprite-resources.assets-2810_6: -222952914
+      arab_stuff_sprite-resources.assets-2810_7: 1339247656
+      arab_stuff_sprite-resources.assets-2810_8: 2143971019
+      arab_stuff_sprite-resources.assets-2810_9: -492506152
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

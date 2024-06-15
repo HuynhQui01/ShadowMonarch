@@ -1,0 +1,664 @@
+fileFormatVersion: 2
+guid: 346d32f14f41b894aa82cf21489549c2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 131
+        width: 50
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb6c0c9ae9c60748afb4b085a53e9b4
+      internalID: 778870806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 182
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d8465042a5c6648b7aae903de0fb94
+      internalID: 988023845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 131
+        width: 50
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c7023012209e94e98b0a41fa58d680
+      internalID: 956293574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_3
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 203
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d43bcf5186edd478a2e7683abac531
+      internalID: -1199082534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_4
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 224
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64a158ec067cdc47b570bbf1222d184
+      internalID: 869889018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_5
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 153
+        width: 32
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8aaf310e3c704489a60d8c987eb44d
+      internalID: 2008046799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_6
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 211
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668c1130ed9c9274fb12fca2720a2d12
+      internalID: -1690772508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_7
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 202
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0325122a6cc83d74abe050c970e54c94
+      internalID: -576387405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_8
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 183
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbef191dfb570fa4a9b5a190682a1b14
+      internalID: 1553283119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_9
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 157
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab158ea61e88e7d4ab27e3172d739a8d
+      internalID: 1350996667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_10
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 165
+        width: 27
+        height: 25
+      alignment: 9
+      pivot: {x: 0.4633224, y: 0.3217505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86276e24733dda9479d93897d861e24d
+      internalID: -468074855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_11
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 145
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d73ea8cf3e6c9d4ca5559c61572da2b
+      internalID: 897144230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_12
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 145
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b145684a59e3344800c170e2040461
+      internalID: -1234474231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_13
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 153
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6cf51339ec923428218912146486e2
+      internalID: -494719676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_14
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 153
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c340c4f7b6569c542ba878c3b2e76fb1
+      internalID: 300678366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 27
+        height: 33
+      alignment: 9
+      pivot: {x: 0.48166063, y: 0.244929}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb903c9f06ebb14b9229fdb99d36a8d
+      internalID: -234253643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_16
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 130
+        width: 40
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3303719f0c17c9438262e228908935c
+      internalID: 225226593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_17
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 22
+        width: 16
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ffb98d0fb29a3349bb604df9195bcde
+      internalID: -1525479637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_18
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 22
+        width: 16
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619817ebd7326194cbce847be1a1439e
+      internalID: -589569439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_19
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 22
+        width: 16
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3129decab97444cb720b41cc930d25
+      internalID: -1992801642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_20
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 22
+        width: 16
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdeccfa278cb9547974fb6207ce803c
+      internalID: -1143924405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_21
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 22
+        width: 16
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda62f18edd434b4fafe0478772fd183
+      internalID: -1627907364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_22
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 33
+        width: 16
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4afc0e92dc2cf14cb54cdec5351019d
+      internalID: 91190397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_23
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 98
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c7ba60034191e49aad65ebad127c3c
+      internalID: -326489999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorations_deutsch-resources.assets-3364_24
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 37
+        width: 43
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e930e975794dc449b50e227fdfdb39
+      internalID: 314637471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      decorations_deutsch-resources.assets-3364_0: 778870806
+      decorations_deutsch-resources.assets-3364_1: 988023845
+      decorations_deutsch-resources.assets-3364_10: -468074855
+      decorations_deutsch-resources.assets-3364_11: 897144230
+      decorations_deutsch-resources.assets-3364_12: -1234474231
+      decorations_deutsch-resources.assets-3364_13: -494719676
+      decorations_deutsch-resources.assets-3364_14: 300678366
+      decorations_deutsch-resources.assets-3364_15: -234253643
+      decorations_deutsch-resources.assets-3364_16: 225226593
+      decorations_deutsch-resources.assets-3364_17: -1525479637
+      decorations_deutsch-resources.assets-3364_18: -589569439
+      decorations_deutsch-resources.assets-3364_19: -1992801642
+      decorations_deutsch-resources.assets-3364_2: 956293574
+      decorations_deutsch-resources.assets-3364_20: -1143924405
+      decorations_deutsch-resources.assets-3364_21: -1627907364
+      decorations_deutsch-resources.assets-3364_22: 91190397
+      decorations_deutsch-resources.assets-3364_23: -326489999
+      decorations_deutsch-resources.assets-3364_24: 314637471
+      decorations_deutsch-resources.assets-3364_3: -1199082534
+      decorations_deutsch-resources.assets-3364_4: 869889018
+      decorations_deutsch-resources.assets-3364_5: 2008046799
+      decorations_deutsch-resources.assets-3364_6: -1690772508
+      decorations_deutsch-resources.assets-3364_7: -576387405
+      decorations_deutsch-resources.assets-3364_8: 1553283119
+      decorations_deutsch-resources.assets-3364_9: 1350996667
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1503 @@
+fileFormatVersion: 2
+guid: 445e7b4fdcdaeac43b9c890105b127e4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 760
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e60b8ab2531c74eb2c614825a507b9
+      internalID: 1250554917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 760
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3d6f58193d76843af95c87dfd9d331
+      internalID: -1511923008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 760
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f7108386a7ae54dbd12268a41531a8
+      internalID: 300254401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 760
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c8e139546e5e64d92cb7ab9a68ab37
+      internalID: -1078465013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 760
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a022ca937022041b233f2a9df6d1be
+      internalID: 2107747347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_5
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 760
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c320a0a978b9cb64984f566568779497
+      internalID: 1295250376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_6
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 760
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1224e6407d4cd75488c2afbc7bff7f68
+      internalID: 1305551429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_7
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 760
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab35f7009df95246a9f41e7f1f2531b
+      internalID: 215846937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 696
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22d8587414f6e44a9093075dd1ce4ec
+      internalID: 1377268745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_9
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 697
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091bcfb899c747a4c8cd668579f47b82
+      internalID: -1151653646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_10
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 700
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a96c954577fe9f44a190931e9637ae9
+      internalID: 654212158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 702
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772fbc2b087abad498f5f79f1e12fce3
+      internalID: -1089586897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_12
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 701
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8d7c07b4eeb0d42857611d82466392
+      internalID: 1195852759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_13
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 700
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb5af6c7face0e418f182e4bb15f2b8
+      internalID: -1391722133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_14
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 699
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3623b03d104bc75498b9dea539ffaa61
+      internalID: 1239557256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_15
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 697
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74f1d3b94405f54f904b6b38d56ce1b
+      internalID: 1701422740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_16
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 632
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec82f3deba8bf3428eadc453521ddea
+      internalID: 2104030260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_17
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 632
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba9268bc21b69f41b37c921e690ed74
+      internalID: 546086484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_18
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 632
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b32c45dd051f2f489b085932ec14fe9
+      internalID: -563706500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_19
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 632
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b2f4ed21a55194fa25fde7da9ab926
+      internalID: -1398128843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_20
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 632
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59d78f6efdb4084abd7f26d843abdb7
+      internalID: 822181702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_21
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 632
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe01bcde5f15534ab848114c2a04c3b
+      internalID: 2050985007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_22
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 632
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a24a745f69e834e8b54d1a6efeb1d4
+      internalID: 1904704283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_23
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 632
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276f830960ccd6142bba930ea6f2f1cd
+      internalID: -545897092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 571
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbcabf63d568fa4da0deed552b6eebc
+      internalID: -1668941745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_25
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 513
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1e8625397a02e46a9373eb46eaef48
+      internalID: -1161434560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_26
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 513
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859582d7b2bb8524a9b23dc2d8dbb45e
+      internalID: -1133876412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_27
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 452
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57d919729e06574db4e5d8ad1053973
+      internalID: 1705441069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_28
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 452
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f5952c8fbb2bc439fe7653abeed96b
+      internalID: -743796493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_30
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 388
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae56c1e02dc65814aa2063270339b916
+      internalID: -1891189214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_31
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 388
+        width: 51
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fccc5876dd1a2c41bcabcd5d56ee9cc
+      internalID: -1028979425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_32
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 388
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f98e26d773a3b4c9e2349fb5d69786
+      internalID: 1014685735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_36
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 388
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3ee325fcb70b24d811b88816edb8c4
+      internalID: -1167941471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_37
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 388
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbbe799db1a6e94c9ee082db1e3b7fd
+      internalID: 328765973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_38
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 388
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901d642e2792bfa4d83ea25be2cc4148
+      internalID: 787834608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_39
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 388
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04c1283626ee0244a876353e85d1820
+      internalID: -1587333552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_40
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 388
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4400941e879bed4e91b265aa21dcd4a
+      internalID: 1081250529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_41
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 388
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617e211af58eb1f4b8d325e321360f3e
+      internalID: -1581246564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_42
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 324
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b1c8e5d858c184081a2d45adada6ee
+      internalID: 2127073308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_43
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 314
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9946b4aab321c984fa0c79935ee73841
+      internalID: 1747556176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_44
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 324
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eecf8edea0584364a80414db623dcbae
+      internalID: 1835210888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_45
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 324
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76675ed501f6ff44d8a9083954c1c572
+      internalID: 114535551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_46
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 265
+        width: 55
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72ce41027256a64692036ce9597afb0
+      internalID: -691099898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_47
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 265
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055cf880394711443af5b69f553bc236
+      internalID: -997888799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_48
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 265
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831ca21b130f1ec4183804412b70c01f
+      internalID: -1285027722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_49
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 265
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b56588bc1f66864f950a632cd0007d0
+      internalID: 64656307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_50
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 265
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc436b335dadbe14dbf2badde59f4320
+      internalID: -849801181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_51
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 265
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42b98730f1d6ba4e868a3b1aeb0c85d
+      internalID: 1960173022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_52
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 202
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5d4fef052b82240bc4cc28bb69b609
+      internalID: 91942728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_53
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 205
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30db6e2d15833e843ae337a745045521
+      internalID: 1991571181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_54
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 205
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134547a775b37024d8cd9c98841435f4
+      internalID: 1040716459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_55
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 205
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1e4562b87761946915cc3bdcb3b9ba
+      internalID: -1957542936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_56
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 204
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9015d4bfefedc4cb3add65a0e52316
+      internalID: 2064738434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_57
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 146
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fca66b39bcea542b35942621b47998
+      internalID: -223455333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_58
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 146
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6a1310fc201064abde6c1e59263f7d
+      internalID: 734888777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_59
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 146
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55252ce045c0ca3499513a16b75329a0
+      internalID: -1010708093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_60
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 146
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6e9b7f8151b614285ea106221adc4d
+      internalID: -1013441108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_61
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 146
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a9fb2936609d14abc8de34a0842308
+      internalID: -1170519032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_62
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 146
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99c9a9ba44f6cc49b6a14cc66b5f3ed
+      internalID: -978565522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_63
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 146
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6c54500fd8ec34c839271f0a0006d2
+      internalID: -2052088478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_64
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 146
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8ae1dba15fdab428d73a52aa719fbb
+      internalID: 1195051949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_29
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 387
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e01a177901c42248a3db25006395db4
+      internalID: -1315649005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_hero_ruthven-resources.assets-3034_33
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 386
+        width: 67
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 1, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eac9464b3f2efd449462db5ac5a486c
+      internalID: 884147083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      unit_hero_ruthven-resources.assets-3034_0: 1250554917
+      unit_hero_ruthven-resources.assets-3034_1: -1511923008
+      unit_hero_ruthven-resources.assets-3034_10: 654212158
+      unit_hero_ruthven-resources.assets-3034_11: -1089586897
+      unit_hero_ruthven-resources.assets-3034_12: 1195852759
+      unit_hero_ruthven-resources.assets-3034_13: -1391722133
+      unit_hero_ruthven-resources.assets-3034_14: 1239557256
+      unit_hero_ruthven-resources.assets-3034_15: 1701422740
+      unit_hero_ruthven-resources.assets-3034_16: 2104030260
+      unit_hero_ruthven-resources.assets-3034_17: 546086484
+      unit_hero_ruthven-resources.assets-3034_18: -563706500
+      unit_hero_ruthven-resources.assets-3034_19: -1398128843
+      unit_hero_ruthven-resources.assets-3034_2: 300254401
+      unit_hero_ruthven-resources.assets-3034_20: 822181702
+      unit_hero_ruthven-resources.assets-3034_21: 2050985007
+      unit_hero_ruthven-resources.assets-3034_22: 1904704283
+      unit_hero_ruthven-resources.assets-3034_23: -545897092
+      unit_hero_ruthven-resources.assets-3034_24: -1668941745
+      unit_hero_ruthven-resources.assets-3034_25: -1161434560
+      unit_hero_ruthven-resources.assets-3034_26: -1133876412
+      unit_hero_ruthven-resources.assets-3034_27: 1705441069
+      unit_hero_ruthven-resources.assets-3034_28: -743796493
+      unit_hero_ruthven-resources.assets-3034_29: -1315649005
+      unit_hero_ruthven-resources.assets-3034_3: -1078465013
+      unit_hero_ruthven-resources.assets-3034_30: -1891189214
+      unit_hero_ruthven-resources.assets-3034_31: -1028979425
+      unit_hero_ruthven-resources.assets-3034_32: 1014685735
+      unit_hero_ruthven-resources.assets-3034_33: 884147083
+      unit_hero_ruthven-resources.assets-3034_34: -2136342068
+      unit_hero_ruthven-resources.assets-3034_35: 1969742084
+      unit_hero_ruthven-resources.assets-3034_36: -1167941471
+      unit_hero_ruthven-resources.assets-3034_37: 328765973
+      unit_hero_ruthven-resources.assets-3034_38: 787834608
+      unit_hero_ruthven-resources.assets-3034_39: -1587333552
+      unit_hero_ruthven-resources.assets-3034_4: 2107747347
+      unit_hero_ruthven-resources.assets-3034_40: 1081250529
+      unit_hero_ruthven-resources.assets-3034_41: -1581246564
+      unit_hero_ruthven-resources.assets-3034_42: 2127073308
+      unit_hero_ruthven-resources.assets-3034_43: 1747556176
+      unit_hero_ruthven-resources.assets-3034_44: 1835210888
+      unit_hero_ruthven-resources.assets-3034_45: 114535551
+      unit_hero_ruthven-resources.assets-3034_46: -691099898
+      unit_hero_ruthven-resources.assets-3034_47: -997888799
+      unit_hero_ruthven-resources.assets-3034_48: -1285027722
+      unit_hero_ruthven-resources.assets-3034_49: 64656307
+      unit_hero_ruthven-resources.assets-3034_5: 1295250376
+      unit_hero_ruthven-resources.assets-3034_50: -849801181
+      unit_hero_ruthven-resources.assets-3034_51: 1960173022
+      unit_hero_ruthven-resources.assets-3034_52: 91942728
+      unit_hero_ruthven-resources.assets-3034_53: 1991571181
+      unit_hero_ruthven-resources.assets-3034_54: 1040716459
+      unit_hero_ruthven-resources.assets-3034_55: -1957542936
+      unit_hero_ruthven-resources.assets-3034_56: 2064738434
+      unit_hero_ruthven-resources.assets-3034_57: -223455333
+      unit_hero_ruthven-resources.assets-3034_58: 734888777
+      unit_hero_ruthven-resources.assets-3034_59: -1010708093
+      unit_hero_ruthven-resources.assets-3034_6: 1305551429
+      unit_hero_ruthven-resources.assets-3034_60: -1013441108
+      unit_hero_ruthven-resources.assets-3034_61: -1170519032
+      unit_hero_ruthven-resources.assets-3034_62: -978565522
+      unit_hero_ruthven-resources.assets-3034_63: -2052088478
+      unit_hero_ruthven-resources.assets-3034_64: 1195051949
+      unit_hero_ruthven-resources.assets-3034_65: -319755385
+      unit_hero_ruthven-resources.assets-3034_7: 215846937
+      unit_hero_ruthven-resources.assets-3034_8: 1377268745
+      unit_hero_ruthven-resources.assets-3034_9: -1151653646
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

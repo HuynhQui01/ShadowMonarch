@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 47e3c53160367244a9dde9ad8e7ce47c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 364
+        width: 641
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1758c8b85bf8509449b7100e2495000a
+      internalID: 1140604686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_4
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 188
+        width: 107
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6b60f6bea408341ba9aa16dc4afd54
+      internalID: 2039899954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_6
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 306
+        width: 64
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2f24a62f6d9754db30ddcebec14a6c
+      internalID: 1481002924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_7
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 234
+        width: 184
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a2b2504e1d02440a3d1608198036fb
+      internalID: 1881512777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_8
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 300
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6982827abaceadf4a8d573feaa320a71
+      internalID: 1369508693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_11
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 259
+        width: 47
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175aa666ee7dc6f4a83e85f06d71aa5e
+      internalID: 235414991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_14
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 265
+        width: 20
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c77d2bffbf0eb4dbef1306486dc91f
+      internalID: -873195957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_18
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 269
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e7e734dde84d94c9b85f4c6d70c07b
+      internalID: 1609253805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_21
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 270
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e404507b7e43f4a88d0f4b7a18ce72
+      internalID: -1007248422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_22
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 225
+        width: 55
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f272c0c693ea3042bab90dcc348fb90
+      internalID: -2064133624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_23
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 221
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6dd60caeff7d94dbe77b91afd955a4
+      internalID: 1825528512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_24
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 194
+        width: 75
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05daa21eb14e264d84a267e557f5a7d
+      internalID: 642071141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_25
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 194
+        width: 75
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d839bfb5dd02e07448aaf311913a862e
+      internalID: 1933182457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_26
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 24
+        width: 92
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18261dd91f973254fb26c7df84cd5a04
+      internalID: 853160223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_27
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 24
+        width: 91
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17316365ce42a8148bb25cb6bb442969
+      internalID: -551340966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_28
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 93
+        width: 93
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f686ee6d3cc6c446a4afd39464c2122
+      internalID: 2022924898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_29
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 127
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aada1ebcf31e014fbf6a59c6c020edf
+      internalID: 1866429489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_30
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 94
+        width: 91
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e568ce780c917b4eaebfe7da442cb13
+      internalID: 2127443038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_31
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 90
+        width: 30
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ea2e7af71ab5443a70e3b633528df1
+      internalID: 1540817187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_32
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 90
+        width: 30
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8ff528bf82749468db0e8a85975228
+      internalID: 113454570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_33
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 22
+        width: 125
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9d28562c2dbe244809bc91f8d158f5
+      internalID: -1725425289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUAWEI_export-resources.assets-1730_34
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 25
+        width: 66
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339122c9254edab4eb632d969e7bb40b
+      internalID: -1108556070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      HUAWEI_export-resources.assets-1730_0: 1140604686
+      HUAWEI_export-resources.assets-1730_1: -2103719451
+      HUAWEI_export-resources.assets-1730_10: 536478864
+      HUAWEI_export-resources.assets-1730_11: 235414991
+      HUAWEI_export-resources.assets-1730_12: 438080784
+      HUAWEI_export-resources.assets-1730_13: 820180457
+      HUAWEI_export-resources.assets-1730_14: -873195957
+      HUAWEI_export-resources.assets-1730_15: 1376998948
+      HUAWEI_export-resources.assets-1730_16: -1032448175
+      HUAWEI_export-resources.assets-1730_17: -1628541044
+      HUAWEI_export-resources.assets-1730_18: 1609253805
+      HUAWEI_export-resources.assets-1730_19: -1722895884
+      HUAWEI_export-resources.assets-1730_2: 1818966520
+      HUAWEI_export-resources.assets-1730_20: 1898490485
+      HUAWEI_export-resources.assets-1730_21: -1007248422
+      HUAWEI_export-resources.assets-1730_22: -2064133624
+      HUAWEI_export-resources.assets-1730_23: 1825528512
+      HUAWEI_export-resources.assets-1730_24: 642071141
+      HUAWEI_export-resources.assets-1730_25: 1933182457
+      HUAWEI_export-resources.assets-1730_26: 853160223
+      HUAWEI_export-resources.assets-1730_27: -551340966
+      HUAWEI_export-resources.assets-1730_28: 2022924898
+      HUAWEI_export-resources.assets-1730_29: 1866429489
+      HUAWEI_export-resources.assets-1730_3: 378183032
+      HUAWEI_export-resources.assets-1730_30: 2127443038
+      HUAWEI_export-resources.assets-1730_31: 1540817187
+      HUAWEI_export-resources.assets-1730_32: 113454570
+      HUAWEI_export-resources.assets-1730_33: -1725425289
+      HUAWEI_export-resources.assets-1730_34: -1108556070
+      HUAWEI_export-resources.assets-1730_4: 2039899954
+      HUAWEI_export-resources.assets-1730_5: 1205366629
+      HUAWEI_export-resources.assets-1730_6: 1481002924
+      HUAWEI_export-resources.assets-1730_7: 1881512777
+      HUAWEI_export-resources.assets-1730_8: 1369508693
+      HUAWEI_export-resources.assets-1730_9: -495075931
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,950 @@
+fileFormatVersion: 2
+guid: 41d7d46bce872a444a52e690c37154fc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 222
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.46683395, y: 0.09758377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51a052fd0deb124892911cd9992005b
+      internalID: -370733419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 222
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.49336672, y: 0.12853877}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73772df276e2fe468ce6c5c55e4edb7
+      internalID: 959572687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 224
+        width: 14
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c724a1425bc7dd9498a77afaf1b3a30c
+      internalID: -419137629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 225
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a353f015b90b4764e9bdc7abc774abe3
+      internalID: 1782820915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 224
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b71b3f8326af524c8f9c211e0636aeb
+      internalID: -1964812422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_5
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 221
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad94fef424417b4787bf796ea047704
+      internalID: 1737104925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_6
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 221
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db70e5dad393e5648962b40248e5621e
+      internalID: 1660270936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_7
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 221
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce2f317a0a5da14fa4ed00567c9837a
+      internalID: 1214177434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_8
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 221
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649c69e8f55c82d4298bcbd071799c12
+      internalID: -214947116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_9
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 221
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad3407a762720940a1416b3c5c7107e
+      internalID: 653770814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_10
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 221
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba800c2268bfa74cae6b3b6d09d775f
+      internalID: 2072861387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_11
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 222
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67512652b4d26cd41b3921f9389538e7
+      internalID: 1975913603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_12
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 223
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da4a5be80b1a0343b8bd1ce7842b113
+      internalID: -456279260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_13
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 142
+        width: 53
+        height: 73
+      alignment: 9
+      pivot: {x: 0.534848, y: 0.20904416}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda091f1266dd694f95a28208330be68
+      internalID: -538429898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_14
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 147
+        width: 14
+        height: 67
+      alignment: 9
+      pivot: {x: 0.50000054, y: 0.04774293}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6a46c05548c9342b755459efd36053
+      internalID: -473296055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_15
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 147
+        width: 14
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5074926, y: 0.049385868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eaf7d3c9755a824eb48b676566a9f1b
+      internalID: 603272706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_16
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 147
+        width: 14
+        height: 67
+      alignment: 9
+      pivot: {x: 0.512146, y: 0.05076417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bdca1212b496c4da521e098c017af5
+      internalID: -472950732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_17
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 147
+        width: 14
+        height: 67
+      alignment: 9
+      pivot: {x: 0.512146, y: 0.05076417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed12ee7a342d366408927af8b5a44a52
+      internalID: -2008790634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_18
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 147
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 0.51713836, y: 0.113011025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fa7e2cdfee6e548864ef2033109b21
+      internalID: 1084995207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_19
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 148
+        width: 32
+        height: 45
+      alignment: 9
+      pivot: {x: 0.49500132, y: 0.0770067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1508881bd8dacf4083cc6a8a0bdb1df
+      internalID: -789727358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_20
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 145
+        width: 62
+        height: 66
+      alignment: 9
+      pivot: {x: 0.49484006, y: 0.1340413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc951312c10c2b41af06fdfa1553a4d
+      internalID: -855128362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_21
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 145
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b9436f73ccdfd4ab7acdaf314b2d02
+      internalID: -2027076706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_22
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 146
+        width: 47
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5090319, y: 0.1462278}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f87b28c9062b1e418a6847fe1dd3e47
+      internalID: -1392792164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_23
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 149
+        width: 38
+        height: 66
+      alignment: 9
+      pivot: {x: 0.4776555, y: 0.0722573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72aec2bb2eb541340981acf9240c5344
+      internalID: -1986852845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_24
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 78
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b1d351c3566c74d9b08cd3e959e261
+      internalID: -958188801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_25
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 79
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed30c822ceccbad41924db00184519ce
+      internalID: 866168726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_26
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 76
+        width: 32
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ed2e11cbd0e7747ab4eaaa491d936a
+      internalID: 731296044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_27
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 78
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3275c546bf7ecd249a94e3d27ac67a97
+      internalID: -1431814714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_28
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 76
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfa307634fabec438340ce56a4d7604
+      internalID: -154417910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_29
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 81
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7321c1bb0a044cb4ba7e3192f4a86bb8
+      internalID: -567472709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_30
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 78
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724c94ec06e40b74390d4659546b8ef4
+      internalID: 1655406233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_31
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 76
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf483f4db5271949a2f3cd15c0ad156
+      internalID: -1285180172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_32
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 74
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac0d9b9b28e6c14f9aee3887d599d29
+      internalID: -1226334090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_33
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 22
+        height: 34
+      alignment: 9
+      pivot: {x: 0.50000006, y: 0.4592586}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf194f90da98ba4b9ea3f975b6fb838
+      internalID: -1566604163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_34
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 9
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 0.54947186, y: 0.3063691}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16aa7fba4343be479eded36bf49e0c1
+      internalID: 1340592017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_35
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 9
+        width: 32
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5000005, y: 0.22295901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df2e803a71a20b4b8d9ba84e7f2c8a8
+      internalID: 867787937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_36
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 12
+        width: 34
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5135808, y: 0.26289326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f084071e04cdcbc4cb86a434459ba13e
+      internalID: 311986571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cn_sutff-resources.assets-3108_37
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 7
+        width: 50
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5092352, y: 0.1797644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875f606dae4b56349a5932721c6ce057
+      internalID: -1779255866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      cn_sutff-resources.assets-3108_0: -370733419
+      cn_sutff-resources.assets-3108_1: 959572687
+      cn_sutff-resources.assets-3108_10: 2072861387
+      cn_sutff-resources.assets-3108_11: 1975913603
+      cn_sutff-resources.assets-3108_12: -456279260
+      cn_sutff-resources.assets-3108_13: -538429898
+      cn_sutff-resources.assets-3108_14: -473296055
+      cn_sutff-resources.assets-3108_15: 603272706
+      cn_sutff-resources.assets-3108_16: -472950732
+      cn_sutff-resources.assets-3108_17: -2008790634
+      cn_sutff-resources.assets-3108_18: 1084995207
+      cn_sutff-resources.assets-3108_19: -789727358
+      cn_sutff-resources.assets-3108_2: -419137629
+      cn_sutff-resources.assets-3108_20: -855128362
+      cn_sutff-resources.assets-3108_21: -2027076706
+      cn_sutff-resources.assets-3108_22: -1392792164
+      cn_sutff-resources.assets-3108_23: -1986852845
+      cn_sutff-resources.assets-3108_24: -958188801
+      cn_sutff-resources.assets-3108_25: 866168726
+      cn_sutff-resources.assets-3108_26: 731296044
+      cn_sutff-resources.assets-3108_27: -1431814714
+      cn_sutff-resources.assets-3108_28: -154417910
+      cn_sutff-resources.assets-3108_29: -567472709
+      cn_sutff-resources.assets-3108_3: 1782820915
+      cn_sutff-resources.assets-3108_30: 1655406233
+      cn_sutff-resources.assets-3108_31: -1285180172
+      cn_sutff-resources.assets-3108_32: -1226334090
+      cn_sutff-resources.assets-3108_33: -1566604163
+      cn_sutff-resources.assets-3108_34: 1340592017
+      cn_sutff-resources.assets-3108_35: 867787937
+      cn_sutff-resources.assets-3108_36: 311986571
+      cn_sutff-resources.assets-3108_37: -1779255866
+      cn_sutff-resources.assets-3108_4: -1964812422
+      cn_sutff-resources.assets-3108_5: 1737104925
+      cn_sutff-resources.assets-3108_6: 1660270936
+      cn_sutff-resources.assets-3108_7: 1214177434
+      cn_sutff-resources.assets-3108_8: -214947116
+      cn_sutff-resources.assets-3108_9: 653770814
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
