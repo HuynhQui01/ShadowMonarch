@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/DarksideScene.unity
+    guid: f742207fe29edb04f907409dc988a434
+  - enabled: 1
+    path: Assets/Scenes/DarksideScene 1.unity
+    guid: c1f748f2027ecf4429ecc19eb3388582
+  - enabled: 1
+    path: Assets/Scenes/HomeBaseScene.unity
+    guid: 74df5bedef6431c43a986f73162c3a19
   m_configObjects: {}

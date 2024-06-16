@@ -1,0 +1,1684 @@
+fileFormatVersion: 2
+guid: b70587e18fffed24cb6dc336eb9cb27d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 757
+        width: 57
+        height: 55
+      alignment: 9
+      pivot: {x: 0.69487053, y: 0.4579257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf31729606df824fbbb42edd680f769
+      internalID: -1725636602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 757
+        width: 59
+        height: 56
+      alignment: 9
+      pivot: {x: 0.6882647, y: 0.44214848}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd54a6f26ac891747b70fba238f5144e
+      internalID: 1020060722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 757
+        width: 61
+        height: 57
+      alignment: 9
+      pivot: {x: 0.68967927, y: 0.42692378}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fa70756e727ec47b733fa51a6a4147
+      internalID: -1386431586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 757
+        width: 62
+        height: 57
+      alignment: 9
+      pivot: {x: 0.6940852, y: 0.45128217}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2797c62d70fde844ad2ff00e8716094
+      internalID: 1162681144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 757
+        width: 62
+        height: 58
+      alignment: 9
+      pivot: {x: 0.68661994, y: 0.44414335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a808efe1ce17a479625bf774e2493b
+      internalID: -1967315685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_5
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 757
+        width: 62
+        height: 58
+      alignment: 9
+      pivot: {x: 0.6716904, y: 0.4521232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa8299da802fa6439202ebd06e36509
+      internalID: -2118612782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_6
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 757
+        width: 62
+        height: 59
+      alignment: 9
+      pivot: {x: 0.6791554, y: 0.42940095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28977d003aabb1f4d946a3ebb0117727
+      internalID: 262769043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_7
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 686
+        width: 60
+        height: 55
+      alignment: 9
+      pivot: {x: 0.7005542, y: 0.49158493}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e263e27af49cb4392fd80b90ee04c8
+      internalID: -1324081794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_8
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 685
+        width: 61
+        height: 55
+      alignment: 9
+      pivot: {x: 0.68967927, y: 0.49158493}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029e56d400e85734ba4831ff0de673ad
+      internalID: -152173217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_9
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 685
+        width: 59
+        height: 55
+      alignment: 9
+      pivot: {x: 0.69610906, y: 0.47475585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5857640c91e2bba4cbcf1e9243d3a633
+      internalID: -104216128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_10
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 685
+        width: 58
+        height: 55
+      alignment: 9
+      pivot: {x: 0.71544987, y: 0.46634078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186b4e2916b8ed84a88b91a5f164ff24
+      internalID: 1778975585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_11
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 685
+        width: 51
+        height: 56
+      alignment: 9
+      pivot: {x: 0.7177968, y: 0.48347145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2975647d6cfd92e40bf2f47d451b017e
+      internalID: 975044808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_12
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 685
+        width: 42
+        height: 57
+      alignment: 9
+      pivot: {x: 0.7424287, y: 0.49188018}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d2cf6cef864ef4cb5f5d140b0d9127
+      internalID: 581296135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 685
+        width: 40
+        height: 56
+      alignment: 9
+      pivot: {x: 0.71983874, y: 0.4917352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4764a048d9ec645bf03cbb40079314
+      internalID: -1310302225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_14
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 685
+        width: 41
+        height: 55
+      alignment: 9
+      pivot: {x: 0.6919005, y: 0.48317096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e14368a78438d54caedc28196bc552f
+      internalID: 2144918823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_15
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 613
+        width: 41
+        height: 54
+      alignment: 9
+      pivot: {x: 0.68061167, y: 0.422864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9da0ef5eb66dad40bff3af35b9e92d5
+      internalID: -1807252208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_16
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 613
+        width: 42
+        height: 53
+      alignment: 9
+      pivot: {x: 0.6873309, y: 0.44760534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070e21a50bc5fdb4596b70464d3fbcaa
+      internalID: -133208635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_17
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 613
+        width: 43
+        height: 53
+      alignment: 9
+      pivot: {x: 0.7045008, y: 0.47380325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cb8856cc83bfc408766cd1276da359
+      internalID: -1730841562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_18
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 614
+        width: 50
+        height: 53
+      alignment: 9
+      pivot: {x: 0.74066526, y: 0.47380325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f48e23b6fc75084192040063e88e713
+      internalID: 473780513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_19
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 614
+        width: 53
+        height: 54
+      alignment: 9
+      pivot: {x: 0.72704273, y: 0.47428837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df5b99daf213564f8d75d5622959371
+      internalID: -638651640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_20
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 614
+        width: 58
+        height: 54
+      alignment: 9
+      pivot: {x: 0.691511, y: 0.47428837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe21af2641ec9c44db5ea9f725e613ba
+      internalID: 1928722604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_21
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 614
+        width: 59
+        height: 55
+      alignment: 9
+      pivot: {x: 0.7117982, y: 0.48317096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8633cf8362ff30f40855fd48a8fdafa4
+      internalID: -1283543660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 533
+        width: 57
+        height: 54
+      alignment: 9
+      pivot: {x: 0.7273489, y: 0.46571746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1933197319e97ec48bac7ee15f650653
+      internalID: -1648865823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_23
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 533
+        width: 52
+        height: 54
+      alignment: 9
+      pivot: {x: 0.75810975, y: 0.47428837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f677b47873db6f44f8aacae3a088c627
+      internalID: -70979963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_24
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 533
+        width: 35
+        height: 54
+      alignment: 9
+      pivot: {x: 0.55289394, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a146155aec75bc499da74d2b4de5a37
+      internalID: -92935806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_25
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 533
+        width: 42
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdd08b19599d9f4aa2e9f0cecd0d351
+      internalID: 1390026529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_26
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 533
+        width: 41
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b74b137c033ea44ba6b3f17307b4da0
+      internalID: 851659566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_27
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 533
+        width: 39
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b205dde0f31220418c6d02ec59a9f2b
+      internalID: 691532887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_28
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 533
+        width: 42
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309fafb5d0e4f1b4d9a26922dc6a2b70
+      internalID: 1113558910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_29
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 533
+        width: 48
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5915c8091713f2f4f87f94e2d57681ca
+      internalID: 220451198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_30
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 437
+        width: 47
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f7b81d45b45b447b692b13b4b23d03
+      internalID: 1611014043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_31
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 436
+        width: 78
+        height: 76
+      alignment: 9
+      pivot: {x: 0.7551431, y: 0.5182692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203de50506639a24088ea81f93eedec8
+      internalID: 1316060979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_32
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 435
+        width: 77
+        height: 47
+      alignment: 9
+      pivot: {x: 0.77648824, y: 0.50984746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fdbaef76dff23408de0568d9587ce6
+      internalID: 1136637599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_33
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 435
+        width: 76
+        height: 47
+      alignment: 9
+      pivot: {x: 0.7557678, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ab9211455086145a1e9d962523c149
+      internalID: -1568035632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_34
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 435
+        width: 68
+        height: 48
+      alignment: 9
+      pivot: {x: 0.6973783, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b7613f12a12a84ba84d5a05661157c
+      internalID: 126899270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_35
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 436
+        width: 69
+        height: 52
+      alignment: 9
+      pivot: {x: 0.7817153, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d979a8909827140be34790a7be2695
+      internalID: 1958179153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_36
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 435
+        width: 69
+        height: 52
+      alignment: 9
+      pivot: {x: 0.80183744, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aaabd11feb9ad740aa48cba5f67e970
+      internalID: -894313185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_37
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 340
+        width: 81
+        height: 86
+      alignment: 9
+      pivot: {x: 0.8028311, y: 0.47847375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd43ed15baf2d1547b458a8459c86b17
+      internalID: 887490018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_38
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 341
+        width: 59
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b5aa2ab07019a4fa87eb605442e867
+      internalID: 528950756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_39
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 341
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d416657c28886354bb8a9411ea4d0855
+      internalID: 1538481258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_40
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 341
+        width: 35
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69451f293b514c6469b8dcb9e44d13c1
+      internalID: 1471222813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_41
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 341
+        width: 32
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f440e3d80092e543afc670ba9fd2e3b
+      internalID: 1352375892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_42
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 341
+        width: 61
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1bd37c00f30374ca0eee7d2974099c
+      internalID: 356519375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_43
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 341
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06d287076d56b241b5015eb905a5b51
+      internalID: 475331884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_44
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 267
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088efb7d1875d684ab320454102508f2
+      internalID: -1347001270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_45
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 267
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54c0ce86efcf4844b10dccc7e075226
+      internalID: 62518586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_46
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 267
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8130600c1b4eedf48977e88582c261b4
+      internalID: -136793439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_47
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 267
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221bbd331ade8d842a392a64bc075005
+      internalID: -1212203246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_48
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 267
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15366f1974a111e4dacf7be8a70b4bc1
+      internalID: 1570458697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_49
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 267
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a25d8e20e5c44842a790843c4110b33
+      internalID: 67372949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_50
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 267
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6540a10c0fc5c24797f04f3e26b0a6c
+      internalID: 814148143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_51
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 197
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27260f7e0f23ad54ab2dc5499a24de8e
+      internalID: -774007807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_52
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 194
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2fcd1ab47edb6e43adcb50a3f39a481
+      internalID: -367933014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_53
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 192
+        width: 59
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad831ece351ea9947bfc3230ed64ed29
+      internalID: -577843220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_54
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 191
+        width: 56
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a790003d82a855849966e766f96ddb29
+      internalID: 700104272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_55
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 195
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74899221878b3604e93b477ec48c9d8e
+      internalID: -252007799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_56
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 191
+        width: 62
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70855a232e4a59246a51f1e022c0d9e8
+      internalID: 1545922885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_57
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 191
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d31c0851b776cc45a86319b64070de7
+      internalID: -1692304012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_58
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 166
+        width: 59
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2222fbada33ccd42b4dc1e2dceb6ed8
+      internalID: -1479077819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_59
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 97
+        width: 61
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb268b585f13724390a0456eab63333
+      internalID: -860066469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_60
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 97
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0e620695cebfa4a85b3c046be67785
+      internalID: 596008497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_65
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 97
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea82e1d9b85ce74198e5f21a3171df6
+      internalID: 1080891065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_66
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 97
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88022a6be77fb254ba19299a04ad8a0f
+      internalID: -1029869455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_67
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 97
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b678574fa20d21f438577e874d9cc240
+      internalID: 1390341838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_68
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 97
+        width: 71
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0310d1a1319144eb244cd71c2bb95c
+      internalID: -852940770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_69
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 96
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf84149323467fa4e9f8fdd9107d1627
+      internalID: -1378911975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_74
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 13
+        width: 70
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e665179b42b2c429d4d6f6a245c8c4
+      internalID: -1683501118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_75
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 11
+        width: 72
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc004a65543c1914392e2d49281c8ff5
+      internalID: -75275169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_76
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 10
+        width: 71
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d435ce76f9f8af46bbd0ee932f922f1
+      internalID: -600800977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_77
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 10
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cc9b30f6ba0284e845c730aa6dd5b0
+      internalID: 139512157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_saint_libeluece-resources.assets-1620_78
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 10
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2013557686e7c014da8ff23f743e2ead
+      internalID: 1002788604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      unit_saint_libeluece-resources.assets-1620_0: -1725636602
+      unit_saint_libeluece-resources.assets-1620_1: 1020060722
+      unit_saint_libeluece-resources.assets-1620_10: 1778975585
+      unit_saint_libeluece-resources.assets-1620_11: 975044808
+      unit_saint_libeluece-resources.assets-1620_12: 581296135
+      unit_saint_libeluece-resources.assets-1620_13: -1310302225
+      unit_saint_libeluece-resources.assets-1620_14: 2144918823
+      unit_saint_libeluece-resources.assets-1620_15: -1807252208
+      unit_saint_libeluece-resources.assets-1620_16: -133208635
+      unit_saint_libeluece-resources.assets-1620_17: -1730841562
+      unit_saint_libeluece-resources.assets-1620_18: 473780513
+      unit_saint_libeluece-resources.assets-1620_19: -638651640
+      unit_saint_libeluece-resources.assets-1620_2: -1386431586
+      unit_saint_libeluece-resources.assets-1620_20: 1928722604
+      unit_saint_libeluece-resources.assets-1620_21: -1283543660
+      unit_saint_libeluece-resources.assets-1620_22: -1648865823
+      unit_saint_libeluece-resources.assets-1620_23: -70979963
+      unit_saint_libeluece-resources.assets-1620_24: -92935806
+      unit_saint_libeluece-resources.assets-1620_25: 1390026529
+      unit_saint_libeluece-resources.assets-1620_26: 851659566
+      unit_saint_libeluece-resources.assets-1620_27: 691532887
+      unit_saint_libeluece-resources.assets-1620_28: 1113558910
+      unit_saint_libeluece-resources.assets-1620_29: 220451198
+      unit_saint_libeluece-resources.assets-1620_3: 1162681144
+      unit_saint_libeluece-resources.assets-1620_30: 1611014043
+      unit_saint_libeluece-resources.assets-1620_31: 1316060979
+      unit_saint_libeluece-resources.assets-1620_32: 1136637599
+      unit_saint_libeluece-resources.assets-1620_33: -1568035632
+      unit_saint_libeluece-resources.assets-1620_34: 126899270
+      unit_saint_libeluece-resources.assets-1620_35: 1958179153
+      unit_saint_libeluece-resources.assets-1620_36: -894313185
+      unit_saint_libeluece-resources.assets-1620_37: 887490018
+      unit_saint_libeluece-resources.assets-1620_38: 528950756
+      unit_saint_libeluece-resources.assets-1620_39: 1538481258
+      unit_saint_libeluece-resources.assets-1620_4: -1967315685
+      unit_saint_libeluece-resources.assets-1620_40: 1471222813
+      unit_saint_libeluece-resources.assets-1620_41: 1352375892
+      unit_saint_libeluece-resources.assets-1620_42: 356519375
+      unit_saint_libeluece-resources.assets-1620_43: 475331884
+      unit_saint_libeluece-resources.assets-1620_44: -1347001270
+      unit_saint_libeluece-resources.assets-1620_45: 62518586
+      unit_saint_libeluece-resources.assets-1620_46: -136793439
+      unit_saint_libeluece-resources.assets-1620_47: -1212203246
+      unit_saint_libeluece-resources.assets-1620_48: 1570458697
+      unit_saint_libeluece-resources.assets-1620_49: 67372949
+      unit_saint_libeluece-resources.assets-1620_5: -2118612782
+      unit_saint_libeluece-resources.assets-1620_50: 814148143
+      unit_saint_libeluece-resources.assets-1620_51: -774007807
+      unit_saint_libeluece-resources.assets-1620_52: -367933014
+      unit_saint_libeluece-resources.assets-1620_53: -577843220
+      unit_saint_libeluece-resources.assets-1620_54: 700104272
+      unit_saint_libeluece-resources.assets-1620_55: -252007799
+      unit_saint_libeluece-resources.assets-1620_56: 1545922885
+      unit_saint_libeluece-resources.assets-1620_57: -1692304012
+      unit_saint_libeluece-resources.assets-1620_58: -1479077819
+      unit_saint_libeluece-resources.assets-1620_59: -860066469
+      unit_saint_libeluece-resources.assets-1620_6: 262769043
+      unit_saint_libeluece-resources.assets-1620_60: 596008497
+      unit_saint_libeluece-resources.assets-1620_61: 1735780369
+      unit_saint_libeluece-resources.assets-1620_62: -1939978031
+      unit_saint_libeluece-resources.assets-1620_63: -350055121
+      unit_saint_libeluece-resources.assets-1620_64: 1344944315
+      unit_saint_libeluece-resources.assets-1620_65: 1080891065
+      unit_saint_libeluece-resources.assets-1620_66: -1029869455
+      unit_saint_libeluece-resources.assets-1620_67: 1390341838
+      unit_saint_libeluece-resources.assets-1620_68: -852940770
+      unit_saint_libeluece-resources.assets-1620_69: -1378911975
+      unit_saint_libeluece-resources.assets-1620_7: -1324081794
+      unit_saint_libeluece-resources.assets-1620_70: -561106649
+      unit_saint_libeluece-resources.assets-1620_71: 632828038
+      unit_saint_libeluece-resources.assets-1620_72: 977553506
+      unit_saint_libeluece-resources.assets-1620_73: 917105358
+      unit_saint_libeluece-resources.assets-1620_74: -1683501118
+      unit_saint_libeluece-resources.assets-1620_75: -75275169
+      unit_saint_libeluece-resources.assets-1620_76: -600800977
+      unit_saint_libeluece-resources.assets-1620_77: 139512157
+      unit_saint_libeluece-resources.assets-1620_78: 1002788604
+      unit_saint_libeluece-resources.assets-1620_8: -152173217
+      unit_saint_libeluece-resources.assets-1620_9: -104216128
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

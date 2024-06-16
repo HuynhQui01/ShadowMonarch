@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,7 +95,280 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: all_hero_select_bg-sharedassets1.assets-43_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 149
+        width: 103
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9bf61713e407494b8b8c26a7dec2dbf
+      internalID: 1818935564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_hero_select_bg-sharedassets1.assets-43_1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 212
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b04149add7177449a82ea04920615c9
+      internalID: -1515322248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_hero_select_bg-sharedassets1.assets-43_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 152
+        width: 6
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fdaf693f2aae7f4eafe387973e9cf41
+      internalID: 1779669910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_hero_select_bg-sharedassets1.assets-43_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 179
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a3133853216cd419001239e042c159
+      internalID: 1595600779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_hero_select_bg-sharedassets1.assets-43_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 152
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f5fee96345d984cbb04108053b8d58
+      internalID: 1476219400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_hero_select_bg-sharedassets1.assets-43_7
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 100
+        width: 81
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624f0efe0eb912a4caddfd1587c55534
+      internalID: -352097494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_hero_select_bg-sharedassets1.assets-43_8
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 124
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2632fdcf00da0264e9fc768e05b67f53
+      internalID: 1156890220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_hero_select_bg-sharedassets1.assets-43_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 126
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57790555c2c02e48a89b74de8cef936
+      internalID: 1987806000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_hero_select_bg-sharedassets1.assets-43_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 2
+        width: 72
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6d5d59e1c4da645beb6795d09b2d41
+      internalID: 2147169948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_hero_select_bg-sharedassets1.assets-43_12
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 2
+        width: 70
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35eedaaca6bb3004591550bfb5a1b0ee
+      internalID: 1795498087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_hero_select_bg-sharedassets1.assets-43_13
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 2
+        width: 71
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6dbc0edcc235640849da3dc9bbd92a
+      internalID: 723886730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_hero_select_bg-sharedassets1.assets-43_14
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 5
+        width: 4
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f075e05f1512e743a8f0ed9a9866101
+      internalID: -1490759417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_hero_select_bg-sharedassets1.assets-43_6
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 2
+        width: 71
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d2351e9fd855a48b0c21e753776f0f
+      internalID: 1432485106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +379,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      all_hero_select_bg-sharedassets1.assets-43_0: 1818935564
+      all_hero_select_bg-sharedassets1.assets-43_1: -1515322248
+      all_hero_select_bg-sharedassets1.assets-43_10: 2147169948
+      all_hero_select_bg-sharedassets1.assets-43_11: -421459551
+      all_hero_select_bg-sharedassets1.assets-43_12: 1795498087
+      all_hero_select_bg-sharedassets1.assets-43_13: 723886730
+      all_hero_select_bg-sharedassets1.assets-43_14: -1490759417
+      all_hero_select_bg-sharedassets1.assets-43_2: 1779669910
+      all_hero_select_bg-sharedassets1.assets-43_3: 18675760
+      all_hero_select_bg-sharedassets1.assets-43_4: 1595600779
+      all_hero_select_bg-sharedassets1.assets-43_5: 1476219400
+      all_hero_select_bg-sharedassets1.assets-43_6: 1432485106
+      all_hero_select_bg-sharedassets1.assets-43_7: -352097494
+      all_hero_select_bg-sharedassets1.assets-43_8: 1156890220
+      all_hero_select_bg-sharedassets1.assets-43_9: 1987806000
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

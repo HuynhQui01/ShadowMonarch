@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,7 +95,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: WeaponItemReplace_2-resources.assets-3623_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 146
+        width: 178
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2f10764cc865044aec22593f2acd21
+      internalID: -1228119463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WeaponItemReplace_2-resources.assets-3623_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 123
+        width: 175
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e87ab8f66d97eb49bfd0e3a3d79bed7
+      internalID: -1700746492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WeaponItemReplace_2-resources.assets-3623_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 100
+        width: 175
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2780d643be1ff5b489e21c7ff9c4523a
+      internalID: 2087766574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WeaponItemReplace_2-resources.assets-3623_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 32
+        width: 94
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911e1b96463144640a3b60073038df8a
+      internalID: 1469011242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WeaponItemReplace_2-resources.assets-3623_4
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 32
+        width: 94
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e8ba01f203cc544ae0f95e50e0f2c4
+      internalID: 1340511759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +211,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WeaponItemReplace_2-resources.assets-3623_0: -1228119463
+      WeaponItemReplace_2-resources.assets-3623_1: -1700746492
+      WeaponItemReplace_2-resources.assets-3623_2: 2087766574
+      WeaponItemReplace_2-resources.assets-3623_3: 1469011242
+      WeaponItemReplace_2-resources.assets-3623_4: 1340511759
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
