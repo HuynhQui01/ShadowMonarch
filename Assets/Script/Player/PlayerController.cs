@@ -7,8 +7,24 @@ using UnityEngine.InputSystem;
 public class PlayerController : Singleton<PlayerController>
 {
     [SerializeField] private float moveSpeed = 1f;
+    [SerializeField] private float MaxArmor = 100f;
     [SerializeField] private float dashSpeed = 4f;
+    [SerializeField] private float Health = 100f;
+    private float CurrentHealth;
+    private float currentArmor;
+    public float regenArmorRate = 2f; 
 
+    
+    private float regenCooldown = 0.5f; 
+    private float lastRegenTime; 
+
+    
+    public float damageCooldown = 3f; 
+    private float lastDamageTime;
+    public Healthbar healthbars;
+    public ArmorBar armorBar;
+
+    
 
 
 
@@ -32,6 +48,8 @@ public class PlayerController : Singleton<PlayerController>
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        healthbars.SetMaxHealth(Health);
+        armorBar.SetMaxArmor(MaxArmor);
     }
 
     void Start()
@@ -44,7 +62,11 @@ public class PlayerController : Singleton<PlayerController>
         playerAction.Combat.Dash.started += _ => Dash();
         startingMoveSpeed = moveSpeed;
         dashEffect.enabled = false;
-        
+        CurrentHealth = Health;
+        currentArmor = MaxArmor;
+        lastRegenTime = Time.time; 
+        lastDamageTime = -damageCooldown;
+
     }
 
     void OnEnable()
@@ -64,8 +86,24 @@ public class PlayerController : Singleton<PlayerController>
             PlayerInput();
             Move();
         }
+        if(currentArmor < MaxArmor && Time.time >= lastRegenTime + regenCooldown && Time.time >= lastDamageTime + damageCooldown){
+            RegenerateArmor();
+            lastRegenTime = Time.time;
+        }
 
     }
+
+    void RegenerateArmor(){
+        currentArmor += regenArmorRate;
+        armorBar.SetArmor(currentArmor);
+        Debug.Log(currentArmor);
+         if (currentArmor > MaxArmor)
+        {
+            currentArmor = MaxArmor; 
+        }
+    }
+
+    
 
     void PlayerInput()
     {
@@ -165,9 +203,29 @@ public class PlayerController : Singleton<PlayerController>
         isDashing = false;
         animator.SetBool("isDashing", isDashing);
 
-
     }
 
+    public void Damaged(float damage)
+    {
+        if (currentArmor > 0)
+        {
+            currentArmor -= damage;
+            armorBar.SetArmor(currentArmor);
+        }
+        else
+        {
+            CurrentHealth -= damage;
+            healthbars.SetHealth(CurrentHealth);
+        }
+        lastDamageTime = Time.time;
+        Debug.Log(CurrentHealth);
+        if (CurrentHealth <= 0) Die();
+    }
+
+    void Die()
+    {
+
+    }
 
 
 }

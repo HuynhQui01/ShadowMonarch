@@ -19,6 +19,7 @@ public class EnemyIdleState : EnemyState
     }
     public override void FrameUpdate(){
         base.FrameUpdate();
+        enemy.animator.SetBool("IsRun", true);
         if(enemy.IsAggroed){
             enemy.StateMachine.ChangeState(enemy.MoveState);
         }

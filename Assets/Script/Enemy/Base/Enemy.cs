@@ -6,8 +6,10 @@ using UnityEngine;
 public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckable
 {
     [field: SerializeField] public float MaxHealth { get; set;} = 100f;
+    [field: SerializeField] public AttackHitBoxCheck Hitbox;
     public float CurrentHealth { get; set;}
     public Rigidbody2D RB { get; set;}
+
     public bool IsFacingRight { get; set;} = true;
 
     public EnemyStateMachine StateMachine {get; set;}
@@ -17,8 +19,10 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckab
     public bool IsAggroed { get; set; }
     public bool IsWithinStrikingDistance { get; set; }
 
+    public Animator animator;
+
     public float RandomMovementRange = 5f;
-    public float RandomMovementSpeed = 1f;
+    public float RandomMovementSpeed = 0.5f;
 
     void Awake(){
         StateMachine = new EnemyStateMachine();
@@ -30,7 +34,9 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckab
     void Start(){
         CurrentHealth = MaxHealth;
         RB = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         StateMachine.Initialize(IdleState);
+        Hitbox = GetComponent<AttackHitBoxCheck>();
     }
 
     void Update(){
@@ -72,12 +78,12 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckab
 
     public void CheckForLeftOrRightFacing(Vector2 velocity)
     {
-        if(IsFacingRight && velocity.x< 0f){
-            Vector3 rotator = new Vector3(transform.rotation.x, 180f, transform.rotation.z);
+        if(!IsFacingRight && velocity.x< 0f){
+            Vector3 rotator = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
             transform.rotation = Quaternion.Euler(rotator);
             IsFacingRight = !IsFacingRight;
-        }else if(!IsFacingRight && velocity.x > 0f){
-            Vector3 rotator = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
+        }else if(IsFacingRight && velocity.x > 0f){
+            Vector3 rotator = new Vector3(transform.rotation.x, 180f, transform.rotation.z);
             transform.rotation = Quaternion.Euler(rotator);
             IsFacingRight = !IsFacingRight;
         }

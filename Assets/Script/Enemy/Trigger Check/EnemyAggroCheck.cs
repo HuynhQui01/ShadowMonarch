@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class EnemyAggroCheck : MonoBehaviour
 {
-    public GameObject PlayerTarget { get; set; }
+    // public GameObject PlayerTarget { get; set; }
     Enemy enemy;
 
     void Awake(){
-        PlayerTarget = GameObject.FindGameObjectsWithTag("Player")[0];
+        // PlayerTarget = GameObject.FindGameObjectsWithTag("Player")[0];
 
         enemy = GetComponentInParent<Enemy>();
 
@@ -16,13 +16,13 @@ public class EnemyAggroCheck : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject == PlayerTarget){
+        if(other.gameObject.tag == "Player"){
             enemy.SetAggroStatus(true);
         }
     }
 
     void OnTriggerExit2D(Collider2D other){
-        if(other.gameObject == PlayerTarget){
+        if(other.gameObject.tag == "Player"){
             enemy.SetAggroStatus(false);
         }
     }
