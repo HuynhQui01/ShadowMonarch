@@ -11,7 +11,8 @@ public class EnemyAttackState : EnemyState
     }
 
     public override void EnterState(){
-        enemy.MoveEnemy(Vector2.zero);enemy.animator.SetTrigger("Attack");
+        enemy.MoveEnemy(Vector2.zero);
+        enemy.animator.SetTrigger("Attack");
         base.EnterState();
     }
     public override void ExitState(){

@@ -34,5 +34,6 @@ public class DashEffect : MonoBehaviour
         spriteRenderer.color = color;
         if(material != null) spriteRenderer.material = material;
     }
+    
 
 }

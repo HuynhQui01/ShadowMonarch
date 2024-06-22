@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IDamageable 
+public interface IEnemyDamageable 
 {
     float MaxHealth { get; set;}
     float CurrentHealth { get; set; }
