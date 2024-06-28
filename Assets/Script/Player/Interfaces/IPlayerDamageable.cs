@@ -8,7 +8,6 @@ public interface IPlayerDamageable
     float CurrentHealth { get; set; }
     float MaxArmor { get; set; }
     float CurrentArmor { get; set; }
-    float Damage { get; set; }
 
     void TakeDamage(float damageAmout);
     void Die();

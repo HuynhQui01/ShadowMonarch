@@ -4,43 +4,37 @@ using UnityEngine;
 
 public class EnemyMoveState : EnemyState
 {
-    Transform playerTransform;
-    float movementSpeed = 0.5f;
-    public EnemyMoveState(Enemy enemy, EnemyStateMachine enemyStateMachine) : base(enemy, enemyStateMachine)
+        public EnemyMoveState(Enemy enemy, EnemyStateMachine enemyStateMachine) : base(enemy, enemyStateMachine)
     {
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     public override void EnterState()
     {
         base.EnterState();
+        enemy.EnemyMoveBaseInstance.DoEnterLogic();
 
         // Debug.Log("move state");
     }
     public override void ExitState()
     {
         base.ExitState();
+        enemy.EnemyMoveBaseInstance.DoExitLogic();
     }
     public override void FrameUpdate()
     {
         base.FrameUpdate();
-        enemy.animator.SetBool("IsRun", true);
-
-        Vector2 moveDir = (playerTransform.position - enemy.transform.position).normalized;
-        enemy.MoveEnemy(moveDir * movementSpeed);
-
-        if (enemy.IsWithinStrikingDistance)
-        {
-            enemy.animator.SetBool("IsRun", false);
-            enemy.StateMachine.ChangeState(enemy.AttackState);
-        }
+        enemy.EnemyMoveBaseInstance.DoFrameUpdateLogic();
+        
     }
     public override void PhysicsUpdate()
     {
         base.PhysicsUpdate();
+        enemy.EnemyMoveBaseInstance.DoPhysicUpdateLogic();
     }
     public override void AnimationTriggerEvent(Enemy.AnimationTriggerType triggerType)
     {
         base.AnimationTriggerEvent(triggerType);
+                enemy.EnemyMoveBaseInstance.DoAnimationTriggerEventLogic(triggerType);
+
     }
 }

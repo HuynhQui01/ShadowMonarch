@@ -12,7 +12,7 @@ public class PlayerStateMachine
     }
 
     public void ChangeState(PlayerState newState){
-        Debug.Log("Change from " + currentPlayerState.getNameState() + "to" + newState.getNameState());
+        // Debug.Log("Change from " + currentPlayerState.getNameState() + "to" + newState.getNameState());
         currentPlayerState.ExitState();
         currentPlayerState = newState;
         currentPlayerState.EnterState();

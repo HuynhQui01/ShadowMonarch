@@ -7,8 +7,8 @@ public class AttackHitBoxCheck : MonoBehaviour
     float damageAmout = 3f;
 
     void OnTriggerEnter2D(Collider2D other){
-        if(other.GetComponent<PlayerController>()){
-            other.GetComponent<PlayerController>().Damaged(damageAmout);
+        if(other.GetComponent<Player>()){
+            other.GetComponent<Player>().TakeDamage(damageAmout);
         }
     }
 }

@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
+public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable, ICollection
 {
     [field: SerializeField]public float MaxHealth { get; set; } = 100f;
     public float CurrentHealth { get; set; }
     [field: SerializeField]public float MaxArmor { get; set; } = 50f;
     public float CurrentArmor { get; set; }
-    [field: SerializeField]public float Damage { get; set; }
+    [field: SerializeField]public float Damage {get; set; }
     [field: SerializeField]public float MoveSpeed { get; set; }
     public Rigidbody2D RB { get; set; }
     public bool IsFacingRight { get; set; } = true;
+    [field: SerializeField] public int coin { get ; set; }
+    [field: SerializeField] public List<GameObject> items { get; set; }
 
     public PlayerStateMachine playerStateMachine { get; set; }
     public PlayerAttackState playerAttackState { get; set; }
@@ -23,8 +26,16 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
     public Animator animator;
     public PlayerAction playerAction;
     public Vector2 movementInput;
-
+    public SwordHitBox swordHitBox;
     public DashEffect dashEffect;
+    public SpriteRenderer spriteRenderer;
+    public float regenArmorRate = 2f; 
+    private float regenCooldown = 0.5f; 
+    private float lastRegenTime; 
+    public float damageCooldown = 3f; 
+    private float lastDamageTime;
+    public Healthbar healthbars;
+    public ArmorBar armorBar;
 
 
 
@@ -38,16 +49,24 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
         playerAction = new PlayerAction();
         animator = GetComponent<Animator>();
         dashEffect = GetComponent<DashEffect>();
+        swordHitBox = GetComponent<SwordHitBox>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         playerAction.Enable();
-
+        healthbars.SetMaxHealth(MaxHealth);
+        armorBar.SetMaxArmor(MaxArmor);
     }
 
     void Start(){
         CurrentHealth = MaxHealth;
         CurrentArmor = MaxArmor;
+        lastRegenTime = Time.time; 
+        lastDamageTime = -damageCooldown;
         RB = GetComponent<Rigidbody2D>();
         playerStateMachine.Initialize(playerIdleState);
         dashEffect.enabled = false;
+        Damage = 10f;
+        playerAction.SaveAndLoad.Save.started +=_=> SaveGame();
+        playerAction.SaveAndLoad.Load.started += _=> LoadGame();
     }
 
     public enum AnimationTriggerType{
@@ -58,6 +77,20 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
     void Update(){
         movementInput = playerAction.Movement.Move.ReadValue<Vector2>();
         playerStateMachine.currentPlayerState.FrameUpdate();
+        if(CurrentArmor < MaxArmor && Time.time >= lastRegenTime + regenCooldown && Time.time >= lastDamageTime + damageCooldown){
+            RegenerateArmor();
+            lastRegenTime = Time.time;
+        }
+    }
+
+    public void RegenerateArmor(){
+        CurrentArmor += regenArmorRate;
+        armorBar.SetArmor(CurrentArmor);
+        Debug.Log(CurrentArmor);
+         if (CurrentArmor > MaxArmor)
+        {
+            CurrentArmor = MaxArmor; 
+        }
     }
 
     void FixedUpdate(){
@@ -88,10 +121,43 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
 
     public void TakeDamage(float damageAmout)
     {
-        
+        if (CurrentArmor > 0)
+        {
+            CurrentArmor -= damageAmout;
+            armorBar.SetArmor(CurrentArmor);
+        }
+        else
+        {
+            CurrentHealth -= damageAmout;
+            healthbars.SetHealth(CurrentHealth);
+        }
+        lastDamageTime = Time.time;
+        Debug.Log(CurrentHealth);
+        if (CurrentHealth <= 0) Die();
     }
 
+    public void SaveGame()
+    {
+        GameData data = new GameData(this);
+        SaveLoadManager.SaveGame(data);
+        Debug.Log("Game Saved");
+    }
     
+    public void LoadGame()
+    {
+        GameData data = SaveLoadManager.LoadGame();
+        if (data != null)
+        {
+            Vector3 position;
+            position.x = data.position[0];
+            position.y = data.position[1];
+            position.z = data.position[2];
+            transform.position = position;
+            coin = data.coin;
+            // score = data.score;
+            Debug.Log("Game Loaded");
+        }
+    }
 
     
 }

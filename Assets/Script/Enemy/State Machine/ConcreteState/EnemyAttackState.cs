@@ -4,34 +4,47 @@ using UnityEngine;
 
 public class EnemyAttackState : EnemyState
 {
-    
+    // bool animationFinished = false;
+
     public EnemyAttackState(Enemy enemy, EnemyStateMachine enemyStateMachine) : base(enemy, enemyStateMachine)
     {
 
     }
 
-    public override void EnterState(){
-        enemy.MoveEnemy(Vector2.zero);
-        enemy.animator.SetTrigger("Attack");
+    public override void EnterState()
+    {
+        
         base.EnterState();
+        enemy.EnemyAttackBaseInstance.DoEnterLogic();
     }
-    public override void ExitState(){
+    public override void ExitState()
+    {
         base.ExitState();
+        enemy.EnemyAttackBaseInstance.DoExitLogic();
     }
-    public override void FrameUpdate(){
+    public override void FrameUpdate()
+    {
         base.FrameUpdate();
+        enemy.EnemyAttackBaseInstance.DoFrameUpdateLogic();
         
-        if(enemy.animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "Attack"){
 
-        enemy.StateMachine.ChangeState(enemy.IdleState);
-        }
-        
-    
+
+        // if (enemy.animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "Attack")
+        // {
+
+        //     enemy.StateMachine.ChangeState(enemy.IdleState);
+        // }
+
+
+
     }
-    public override void PhysicsUpdate(){
+    public override void PhysicsUpdate()
+    {
         base.PhysicsUpdate();
     }
-    public override void AnimationTriggerEvent(Enemy.AnimationTriggerType triggerType){
+    public override void AnimationTriggerEvent(Enemy.AnimationTriggerType triggerType)
+    {
         base.AnimationTriggerEvent(triggerType);
+        enemy.EnemyAttackBaseInstance.DoAnimationTriggerEventLogic(triggerType);
     }
 }

@@ -11,6 +11,7 @@ public class PlayerAttackState : PlayerState
     public override void EnterState()
     {
         base.EnterState();
+        player.animator.SetTrigger("Attack");
     }
 
     public override void ExitState()
@@ -22,9 +23,7 @@ public class PlayerAttackState : PlayerState
     public override void FrameUpdate()
     {
         base.FrameUpdate();
-        if(player.playerAction.Combat.Attack.IsPressed()){
-            player.animator.SetTrigger("Attack");
-        }
+        
         if(player.playerAction.Combat.Attack.IsInProgress()){
             player.animator.SetBool("KeepingAttack", true);
         }

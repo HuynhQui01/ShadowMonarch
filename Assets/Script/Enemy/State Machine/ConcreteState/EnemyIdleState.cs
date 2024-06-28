@@ -4,39 +4,32 @@ using UnityEngine;
 
 public class EnemyIdleState : EnemyState
 {
-    Vector3 targetPos;
-    Vector3 dir;
+    
     public EnemyIdleState(Enemy enemy, EnemyStateMachine enemyStateMachine) : base(enemy, enemyStateMachine)
     {
     }
 
     public override void EnterState(){
         base.EnterState();
-        targetPos = GetRandomPointInCircle();
+        enemy.EnemyIdleBaseInstance.DoEnterLogic();
     }
     public override void ExitState(){
         base.ExitState();
+        enemy.EnemyIdleBaseInstance.DoExitLogic();
     }
     public override void FrameUpdate(){
         base.FrameUpdate();
-        enemy.animator.SetBool("IsRun", true);
-        if(enemy.IsAggroed){
-            enemy.StateMachine.ChangeState(enemy.MoveState);
-        }
-        dir = (targetPos - enemy.transform.position).normalized;
-        enemy.MoveEnemy(dir * enemy.RandomMovementSpeed);
-        if((enemy.transform.position - targetPos).sqrMagnitude < 0.01f){
-            targetPos = GetRandomPointInCircle();
-        }
+        enemy.EnemyIdleBaseInstance.DoFrameUpdateLogic();
+        
     }
     public override void PhysicsUpdate(){
         base.PhysicsUpdate();
+        enemy.EnemyIdleBaseInstance.DoPhysicUpdateLogic();
     }
     public override void AnimationTriggerEvent(Enemy.AnimationTriggerType triggerType){
         base.AnimationTriggerEvent(triggerType);
+        enemy.EnemyIdleBaseInstance.DoAnimationTriggerEventLogic(triggerType);
     }
 
-    Vector3 GetRandomPointInCircle(){
-        return enemy.transform.position + (Vector3)UnityEngine.Random.insideUnitCircle * enemy.RandomMovementRange;
-    }
+    
 }
