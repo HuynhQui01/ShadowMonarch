@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -23,6 +24,11 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable, ICollec
     public PlayerDashState playerDashState { get; set; }
     public PlayerIdleState playerIdleState { get; set; }
 
+    #region Item 
+    [field: SerializeField] public BloodKnightHelmet Item ;
+    public BloodKnightHelmet helmet {get; set; }
+    #endregion
+
     public Animator animator;
     public PlayerAction playerAction;
     public Vector2 movementInput;
@@ -36,6 +42,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable, ICollec
     private float lastDamageTime;
     public Healthbar healthbars;
     public ArmorBar armorBar;
+    public UIInventory uIInventory;
 
 
 
@@ -51,9 +58,18 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable, ICollec
         dashEffect = GetComponent<DashEffect>();
         swordHitBox = GetComponent<SwordHitBox>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        uIInventory = FindAnyObjectByType<UIInventory>();
         playerAction.Enable();
         healthbars.SetMaxHealth(MaxHealth);
         armorBar.SetMaxArmor(MaxArmor);
+
+        CheckNull();
+    }
+
+    private void CheckNull(){
+        if(Item){
+            helmet = Instantiate(Item);
+        }
     }
 
     void Start(){
@@ -67,7 +83,18 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable, ICollec
         Damage = 10f;
         playerAction.SaveAndLoad.Save.started +=_=> SaveGame();
         playerAction.SaveAndLoad.Load.started += _=> LoadGame();
+        playerAction.Inventory.Open.started += _=> InventoryShowAndHide();
+        InventoryShowAndHide();
+        Debug.Log(MaxHealth);
     }
+
+    private void InventoryShowAndHide()
+    {
+        uIInventory.ShowAndHide();
+        Debug.Log("CLose");
+    }
+
+   
 
     public enum AnimationTriggerType{
         EnemyDamaged,
@@ -154,6 +181,10 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable, ICollec
             position.z = data.position[2];
             transform.position = position;
             coin = data.coin;
+            Item = data.helmet;
+            MaxHealth += data.helmet.health;
+        Debug.Log(MaxHealth);
+            
             // score = data.score;
             Debug.Log("Game Loaded");
         }

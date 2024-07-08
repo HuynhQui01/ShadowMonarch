@@ -6,6 +6,7 @@ public static class SaveLoadManager
     public static void SaveGame(GameData data)
     {
         string path = Application.persistentDataPath + "/gameData.json";
+         Debug.Log("Saving game data to: " + path);
         string json = JsonUtility.ToJson(data);
         File.WriteAllText(path, json);
     }

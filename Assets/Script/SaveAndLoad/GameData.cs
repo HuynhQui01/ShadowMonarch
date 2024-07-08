@@ -6,6 +6,8 @@ public class GameData
     public float[] position;
     public int score;
     public int coin;
+    public BloodKnightHelmet helmet;
+    
 
     public GameData(Player player)
     {
@@ -15,6 +17,8 @@ public class GameData
         position[2] = player.transform.position.z;
 
         this.coin = player.coin;
+        this.helmet = player.Item;
+        
         // score = player.score;
     }
 }
