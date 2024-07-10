@@ -30,9 +30,6 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
     public bool IsWithinStrikingDistance { get; set; }
 
     public Animator animator;
-
-    
-
     public bool takeHit = false;
 
     void Awake(){

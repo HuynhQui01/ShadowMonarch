@@ -5,18 +5,17 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable, ICollection
+public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
 {
-    [field: SerializeField]public float MaxHealth { get; set; } = 100f;
+    [field: SerializeField] public float MaxHealth { get; set; } = 100f;
     public float CurrentHealth { get; set; }
-    [field: SerializeField]public float MaxArmor { get; set; } = 50f;
+    [field: SerializeField] public float MaxArmor { get; set; } = 50f;
     public float CurrentArmor { get; set; }
-    [field: SerializeField]public float Damage {get; set; }
-    [field: SerializeField]public float MoveSpeed { get; set; }
+    [field: SerializeField] public float Damage { get; set; }
+    [field: SerializeField] public float MoveSpeed { get; set; }
     public Rigidbody2D RB { get; set; }
     public bool IsFacingRight { get; set; } = true;
-    [field: SerializeField] public int coin { get ; set; }
-    [field: SerializeField] public List<GameObject> items { get; set; }
+    [field: SerializeField] public int coin { get; set; }
 
     public PlayerStateMachine playerStateMachine { get; set; }
     public PlayerAttackState playerAttackState { get; set; }
@@ -24,9 +23,14 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable, ICollec
     public PlayerDashState playerDashState { get; set; }
     public PlayerIdleState playerIdleState { get; set; }
 
-    #region Item 
-    [field: SerializeField] public BloodKnightHelmet Item ;
-    public BloodKnightHelmet helmet {get; set; }
+    #region Equipments 
+    [field: SerializeField] public Helmet Helmet;
+    [field: SerializeField] public Chestplate Chestplate;
+    [field: SerializeField] public Legging Leggings;
+    [field: SerializeField] public Boots Boots;
+    #endregion
+    #region Items
+    [field: SerializeField] public Item[] listItems;
     #endregion
 
     public Animator animator;
@@ -35,10 +39,10 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable, ICollec
     public SwordHitBox swordHitBox;
     public DashEffect dashEffect;
     public SpriteRenderer spriteRenderer;
-    public float regenArmorRate = 2f; 
-    private float regenCooldown = 0.5f; 
-    private float lastRegenTime; 
-    public float damageCooldown = 3f; 
+    public float regenArmorRate = 2f;
+    private float regenCooldown = 0.5f;
+    private float lastRegenTime;
+    public float damageCooldown = 3f;
     private float lastDamageTime;
     public Healthbar healthbars;
     public ArmorBar armorBar;
@@ -48,6 +52,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable, ICollec
 
     void Awake()
     {
+        
         playerStateMachine = new PlayerStateMachine();
         playerAttackState = new PlayerAttackState(this, playerStateMachine);
         playerMovementState = new PlayerMoveState(this, playerStateMachine);
@@ -62,28 +67,25 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable, ICollec
         playerAction.Enable();
         healthbars.SetMaxHealth(MaxHealth);
         armorBar.SetMaxArmor(MaxArmor);
-
-        CheckNull();
     }
 
-    private void CheckNull(){
-        if(Item){
-            helmet = Instantiate(Item);
-        }
-    }
+    
 
-    void Start(){
+    void Start()
+    {
         CurrentHealth = MaxHealth;
         CurrentArmor = MaxArmor;
-        lastRegenTime = Time.time; 
+        lastRegenTime = Time.time;
         lastDamageTime = -damageCooldown;
         RB = GetComponent<Rigidbody2D>();
         playerStateMachine.Initialize(playerIdleState);
         dashEffect.enabled = false;
         Damage = 10f;
-        playerAction.SaveAndLoad.Save.started +=_=> SaveGame();
-        playerAction.SaveAndLoad.Load.started += _=> LoadGame();
-        playerAction.Inventory.Open.started += _=> InventoryShowAndHide();
+        playerAction.SaveAndLoad.Save.started += _ => SaveGame();
+        playerAction.SaveAndLoad.Load.started += _ => LoadGame();
+        playerAction.Inventory.Open.started += _ => InventoryShowAndHide();
+        // LoadGame();
+        // listItems = new Item[12];
         InventoryShowAndHide();
         Debug.Log(MaxHealth);
     }
@@ -91,50 +93,58 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable, ICollec
     private void InventoryShowAndHide()
     {
         uIInventory.ShowAndHide();
-        Debug.Log("CLose");
     }
 
-   
 
-    public enum AnimationTriggerType{
+
+    public enum AnimationTriggerType
+    {
         EnemyDamaged,
         PlayFootstepSound
     }
 
-    void Update(){
+    void Update()
+    {
         movementInput = playerAction.Movement.Move.ReadValue<Vector2>();
         playerStateMachine.currentPlayerState.FrameUpdate();
-        if(CurrentArmor < MaxArmor && Time.time >= lastRegenTime + regenCooldown && Time.time >= lastDamageTime + damageCooldown){
+        if (CurrentArmor < MaxArmor && Time.time >= lastRegenTime + regenCooldown && Time.time >= lastDamageTime + damageCooldown)
+        {
             RegenerateArmor();
             lastRegenTime = Time.time;
         }
     }
 
-    public void RegenerateArmor(){
+    public void RegenerateArmor()
+    {
         CurrentArmor += regenArmorRate;
         armorBar.SetArmor(CurrentArmor);
         Debug.Log(CurrentArmor);
-         if (CurrentArmor > MaxArmor)
+        if (CurrentArmor > MaxArmor)
         {
-            CurrentArmor = MaxArmor; 
+            CurrentArmor = MaxArmor;
         }
     }
 
-    void FixedUpdate(){
+    void FixedUpdate()
+    {
         playerStateMachine.currentPlayerState.PhysicsUpdate();
     }
 
-    private void AnimationTriggerEvent(AnimationTriggerType triggerType){
+    private void AnimationTriggerEvent(AnimationTriggerType triggerType)
+    {
         playerStateMachine.currentPlayerState.AnimationTriggerEvent(triggerType);
     }
 
     public void CheckForLeftOrRightFacing(Vector2 velocity)
     {
-       if(!IsFacingRight && velocity.x< 0f){
+        if (!IsFacingRight && velocity.x < 0f)
+        {
             Vector3 rotator = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
             transform.rotation = Quaternion.Euler(rotator);
             IsFacingRight = !IsFacingRight;
-        }else if(IsFacingRight && velocity.x > 0f){
+        }
+        else if (IsFacingRight && velocity.x > 0f)
+        {
             Vector3 rotator = new Vector3(transform.rotation.x, 180f, transform.rotation.z);
             transform.rotation = Quaternion.Euler(rotator);
             IsFacingRight = !IsFacingRight;
@@ -143,7 +153,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable, ICollec
 
     public void Die()
     {
-        
+
     }
 
     public void TakeDamage(float damageAmout)
@@ -169,7 +179,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable, ICollec
         SaveLoadManager.SaveGame(data);
         Debug.Log("Game Saved");
     }
-    
+
     public void LoadGame()
     {
         GameData data = SaveLoadManager.LoadGame();
@@ -181,14 +191,14 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable, ICollec
             position.z = data.position[2];
             transform.position = position;
             coin = data.coin;
-            Item = data.helmet;
+            Helmet = data.helmet;
             MaxHealth += data.helmet.health;
-        Debug.Log(MaxHealth);
-            
+            Debug.Log(MaxHealth);
+
             // score = data.score;
             Debug.Log("Game Loaded");
         }
     }
 
-    
+
 }

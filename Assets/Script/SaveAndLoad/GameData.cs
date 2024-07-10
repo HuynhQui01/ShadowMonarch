@@ -4,9 +4,11 @@ using System;
 public class GameData
 {
     public float[] position;
-    public int score;
     public int coin;
-    public BloodKnightHelmet helmet;
+    public Helmet helmet;
+    public Chestplate chestplate;
+    public Legging leggings;
+    public Boots boots;
     
 
     public GameData(Player player)
@@ -17,8 +19,9 @@ public class GameData
         position[2] = player.transform.position.z;
 
         this.coin = player.coin;
-        this.helmet = player.Item;
-        
-        // score = player.score;
+        this.helmet = player.Helmet;
+        this.chestplate = player.Chestplate;
+        this.leggings = player.Leggings;
+        this.boots = player.Boots;
     }
 }
