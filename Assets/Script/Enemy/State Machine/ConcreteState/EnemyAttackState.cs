@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyAttackState : EnemyState
 {
-    // bool animationFinished = false;
 
     public EnemyAttackState(Enemy enemy, EnemyStateMachine enemyStateMachine) : base(enemy, enemyStateMachine)
     {
@@ -26,25 +25,9 @@ public class EnemyAttackState : EnemyState
     {
         base.FrameUpdate();
         enemy.EnemyAttackBaseInstance.DoFrameUpdateLogic();
-        
-
-
-        // if (enemy.animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "Attack")
-        // {
-
-        //     enemy.StateMachine.ChangeState(enemy.IdleState);
-        // }
-
-
-
     }
     public override void PhysicsUpdate()
     {
         base.PhysicsUpdate();
-    }
-    public override void AnimationTriggerEvent(Enemy.AnimationTriggerType triggerType)
-    {
-        base.AnimationTriggerEvent(triggerType);
-        enemy.EnemyAttackBaseInstance.DoAnimationTriggerEventLogic(triggerType);
     }
 }

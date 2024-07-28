@@ -9,9 +9,7 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
     [field: SerializeField] public AttackHitBoxCheck Hitbox;
     public float CurrentHealth { get; set;}
     public Rigidbody2D RB { get; set;}
-
     public bool IsFacingRight { get; set;} = true;
-
     public EnemyStateMachine StateMachine {get; set;}
     public EnemyAttackState AttackState {get; set;}
     public EnemyIdleState IdleState {get; set;}
@@ -31,6 +29,12 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
 
     public Animator animator;
     public bool takeHit = false;
+    public Player player;
+    public GameObject isTarget;
+    public HitEffect hitEffect;
+    public bool isDead = false;
+    public GameObject prefab;
+
 
     void Awake(){
         EnemyIdleBaseInstance = Instantiate(EnemyIdelBase);
@@ -43,6 +47,8 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
         MoveState = new EnemyMoveState(this, StateMachine);
         GetHitState = new EnemyGetHitState(this, StateMachine);
         DeadState = new EnemyDeadState(this, StateMachine);
+        player = FindObjectOfType<Player>();
+
     }
 
     void Start(){
@@ -64,15 +70,6 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
         StateMachine.CurrentEnemyState.PhysicsUpdate();
     }
 
-    public enum AnimationTriggerType{
-        EnemyDamaged,
-        PlayFootstepSound
-    }
-
-    private void AnimationTriggerEvent(AnimationTriggerType triggerType){
-        StateMachine.CurrentEnemyState.AnimationTriggerEvent(triggerType);
-    }
-
     public void Damage(float damageAmout)
     {
         CurrentHealth -= damageAmout;
@@ -85,7 +82,8 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
 
     public void Die()
     {
-        Destroy(gameObject);
+        // Destroy(gameObject);
+        isDead = true;
     }
 
     public void MoveEnemy(Vector2 velocity)

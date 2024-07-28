@@ -41,9 +41,4 @@ public class EnemyAttackWithWeapon : EnemyAttackSOBase
     public override void DoPhysicUpdateLogic(){
         base.DoPhysicUpdateLogic();
     }
-
-    public override void DoAnimationTriggerEventLogic(Enemy.AnimationTriggerType triggerType)
-    {
-        base.DoAnimationTriggerEventLogic(triggerType);
-    }
 }

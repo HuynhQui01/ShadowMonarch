@@ -33,6 +33,15 @@ public class PlayerAttackState : PlayerState
         if(player.playerAction.Combat.Dash.IsPressed()){
             player.playerStateMachine.ChangeState(player.playerDashState);
         }
+        if(player.playerAction.Combat.Skill1.IsPressed()){
+            player.playerStateMachine.ChangeState(player.playerUseSkillState);
+        }
+        if(player.playerAction.Combat.Skill2.IsPressed()){
+
+        }
+        if(player.playerAction.Combat.SpecialSkill.IsPressed()){
+            
+        }
     }
 
     public override void PhysicsUpdate()

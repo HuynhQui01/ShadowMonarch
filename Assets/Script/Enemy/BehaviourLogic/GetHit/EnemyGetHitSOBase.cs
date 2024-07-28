@@ -24,6 +24,5 @@ public class EnemyGetHitSOBase : ScriptableObject
     public virtual void DoFrameUpdateLogic(){
     }
     public virtual void DoPhysicUpdateLogic(){}
-    public virtual void DoAnimationTriggerEventLogic(Enemy.AnimationTriggerType triggerType){}
     public virtual void ResetValues(){}
 }

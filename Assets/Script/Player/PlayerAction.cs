@@ -125,6 +125,33 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Skill1"",
+                    ""type"": ""Button"",
+                    ""id"": ""0612a0d9-fe8d-4fbe-bcef-879a5df0f065"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Skill2"",
+                    ""type"": ""Button"",
+                    ""id"": ""68afdbbe-e02b-43d5-9056-12dcffad2ae2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SpecialSkill"",
+                    ""type"": ""Button"",
+                    ""id"": ""f484a6b9-05cf-492a-b44f-38c59e138b07"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -158,6 +185,39 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c1012e4a-187b-4806-9abc-c5c27e678597"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5e2cee1a-f7c5-4ce6-a9bb-fbb3cf27b511"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Skill2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""82078207-00ee-4bf6-a576-3ae9a81f9b06"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SpecialSkill"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -256,6 +316,65 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
                     ""action"": ""Close"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c4dd406b-f571-483a-a95c-3b3ad559de8e"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Close"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""SkillPanel"",
+            ""id"": ""a7465181-5f29-45ab-b663-5a0412690d59"",
+            ""actions"": [
+                {
+                    ""name"": ""OpenSkillPanel"",
+                    ""type"": ""Button"",
+                    ""id"": ""4ca6de8a-c790-4771-93f2-042aae0c4061"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CloseSkillPanel"",
+                    ""type"": ""Button"",
+                    ""id"": ""38da2895-674e-4cac-873e-3a1cfc5400a7"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""83b92db6-3c97-4940-88a0-f4cb194882d5"",
+                    ""path"": ""<Keyboard>/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OpenSkillPanel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""74313cb1-731a-40a6-94ec-babe47d67df8"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CloseSkillPanel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -270,6 +389,9 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
         m_Combat_Attack = m_Combat.FindAction("Attack", throwIfNotFound: true);
         m_Combat_KeepingAttack = m_Combat.FindAction("KeepingAttack", throwIfNotFound: true);
         m_Combat_Dash = m_Combat.FindAction("Dash", throwIfNotFound: true);
+        m_Combat_Skill1 = m_Combat.FindAction("Skill1", throwIfNotFound: true);
+        m_Combat_Skill2 = m_Combat.FindAction("Skill2", throwIfNotFound: true);
+        m_Combat_SpecialSkill = m_Combat.FindAction("SpecialSkill", throwIfNotFound: true);
         // SaveAndLoad
         m_SaveAndLoad = asset.FindActionMap("SaveAndLoad", throwIfNotFound: true);
         m_SaveAndLoad_Save = m_SaveAndLoad.FindAction("Save", throwIfNotFound: true);
@@ -278,6 +400,10 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
         m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
         m_Inventory_Open = m_Inventory.FindAction("Open", throwIfNotFound: true);
         m_Inventory_Close = m_Inventory.FindAction("Close", throwIfNotFound: true);
+        // SkillPanel
+        m_SkillPanel = asset.FindActionMap("SkillPanel", throwIfNotFound: true);
+        m_SkillPanel_OpenSkillPanel = m_SkillPanel.FindAction("OpenSkillPanel", throwIfNotFound: true);
+        m_SkillPanel_CloseSkillPanel = m_SkillPanel.FindAction("CloseSkillPanel", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -388,6 +514,9 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
     private readonly InputAction m_Combat_Attack;
     private readonly InputAction m_Combat_KeepingAttack;
     private readonly InputAction m_Combat_Dash;
+    private readonly InputAction m_Combat_Skill1;
+    private readonly InputAction m_Combat_Skill2;
+    private readonly InputAction m_Combat_SpecialSkill;
     public struct CombatActions
     {
         private @PlayerAction m_Wrapper;
@@ -395,6 +524,9 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
         public InputAction @Attack => m_Wrapper.m_Combat_Attack;
         public InputAction @KeepingAttack => m_Wrapper.m_Combat_KeepingAttack;
         public InputAction @Dash => m_Wrapper.m_Combat_Dash;
+        public InputAction @Skill1 => m_Wrapper.m_Combat_Skill1;
+        public InputAction @Skill2 => m_Wrapper.m_Combat_Skill2;
+        public InputAction @SpecialSkill => m_Wrapper.m_Combat_SpecialSkill;
         public InputActionMap Get() { return m_Wrapper.m_Combat; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -413,6 +545,15 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
             @Dash.started += instance.OnDash;
             @Dash.performed += instance.OnDash;
             @Dash.canceled += instance.OnDash;
+            @Skill1.started += instance.OnSkill1;
+            @Skill1.performed += instance.OnSkill1;
+            @Skill1.canceled += instance.OnSkill1;
+            @Skill2.started += instance.OnSkill2;
+            @Skill2.performed += instance.OnSkill2;
+            @Skill2.canceled += instance.OnSkill2;
+            @SpecialSkill.started += instance.OnSpecialSkill;
+            @SpecialSkill.performed += instance.OnSpecialSkill;
+            @SpecialSkill.canceled += instance.OnSpecialSkill;
         }
 
         private void UnregisterCallbacks(ICombatActions instance)
@@ -426,6 +567,15 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
             @Dash.started -= instance.OnDash;
             @Dash.performed -= instance.OnDash;
             @Dash.canceled -= instance.OnDash;
+            @Skill1.started -= instance.OnSkill1;
+            @Skill1.performed -= instance.OnSkill1;
+            @Skill1.canceled -= instance.OnSkill1;
+            @Skill2.started -= instance.OnSkill2;
+            @Skill2.performed -= instance.OnSkill2;
+            @Skill2.canceled -= instance.OnSkill2;
+            @SpecialSkill.started -= instance.OnSpecialSkill;
+            @SpecialSkill.performed -= instance.OnSpecialSkill;
+            @SpecialSkill.canceled -= instance.OnSpecialSkill;
         }
 
         public void RemoveCallbacks(ICombatActions instance)
@@ -551,6 +701,60 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
         }
     }
     public InventoryActions @Inventory => new InventoryActions(this);
+
+    // SkillPanel
+    private readonly InputActionMap m_SkillPanel;
+    private List<ISkillPanelActions> m_SkillPanelActionsCallbackInterfaces = new List<ISkillPanelActions>();
+    private readonly InputAction m_SkillPanel_OpenSkillPanel;
+    private readonly InputAction m_SkillPanel_CloseSkillPanel;
+    public struct SkillPanelActions
+    {
+        private @PlayerAction m_Wrapper;
+        public SkillPanelActions(@PlayerAction wrapper) { m_Wrapper = wrapper; }
+        public InputAction @OpenSkillPanel => m_Wrapper.m_SkillPanel_OpenSkillPanel;
+        public InputAction @CloseSkillPanel => m_Wrapper.m_SkillPanel_CloseSkillPanel;
+        public InputActionMap Get() { return m_Wrapper.m_SkillPanel; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(SkillPanelActions set) { return set.Get(); }
+        public void AddCallbacks(ISkillPanelActions instance)
+        {
+            if (instance == null || m_Wrapper.m_SkillPanelActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_SkillPanelActionsCallbackInterfaces.Add(instance);
+            @OpenSkillPanel.started += instance.OnOpenSkillPanel;
+            @OpenSkillPanel.performed += instance.OnOpenSkillPanel;
+            @OpenSkillPanel.canceled += instance.OnOpenSkillPanel;
+            @CloseSkillPanel.started += instance.OnCloseSkillPanel;
+            @CloseSkillPanel.performed += instance.OnCloseSkillPanel;
+            @CloseSkillPanel.canceled += instance.OnCloseSkillPanel;
+        }
+
+        private void UnregisterCallbacks(ISkillPanelActions instance)
+        {
+            @OpenSkillPanel.started -= instance.OnOpenSkillPanel;
+            @OpenSkillPanel.performed -= instance.OnOpenSkillPanel;
+            @OpenSkillPanel.canceled -= instance.OnOpenSkillPanel;
+            @CloseSkillPanel.started -= instance.OnCloseSkillPanel;
+            @CloseSkillPanel.performed -= instance.OnCloseSkillPanel;
+            @CloseSkillPanel.canceled -= instance.OnCloseSkillPanel;
+        }
+
+        public void RemoveCallbacks(ISkillPanelActions instance)
+        {
+            if (m_Wrapper.m_SkillPanelActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(ISkillPanelActions instance)
+        {
+            foreach (var item in m_Wrapper.m_SkillPanelActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_SkillPanelActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public SkillPanelActions @SkillPanel => new SkillPanelActions(this);
     public interface IMovementActions
     {
         void OnMove(InputAction.CallbackContext context);
@@ -560,6 +764,9 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
         void OnAttack(InputAction.CallbackContext context);
         void OnKeepingAttack(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
+        void OnSkill1(InputAction.CallbackContext context);
+        void OnSkill2(InputAction.CallbackContext context);
+        void OnSpecialSkill(InputAction.CallbackContext context);
     }
     public interface ISaveAndLoadActions
     {
@@ -570,5 +777,10 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
     {
         void OnOpen(InputAction.CallbackContext context);
         void OnClose(InputAction.CallbackContext context);
+    }
+    public interface ISkillPanelActions
+    {
+        void OnOpenSkillPanel(InputAction.CallbackContext context);
+        void OnCloseSkillPanel(InputAction.CallbackContext context);
     }
 }

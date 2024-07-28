@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class EnemyAggroCheck : MonoBehaviour
 {
-    // public GameObject PlayerTarget { get; set; }
     Enemy enemy;
 
     void Awake(){
-        // PlayerTarget = GameObject.FindGameObjectsWithTag("Player")[0];
 
         enemy = GetComponentInParent<Enemy>();
 

@@ -48,11 +48,6 @@ public class EnemyIdleRandomWander : EnemyIdelSOBase
         base.DoPhysicUpdateLogic();
     }
 
-    public override void DoAnimationTriggerEventLogic(Enemy.AnimationTriggerType triggerType)
-    {
-        base.DoAnimationTriggerEventLogic(triggerType);
-    }
-
     Vector3 GetRandomPointInCircle(){
         return enemy.transform.position + (Vector3)UnityEngine.Random.insideUnitCircle * RandomMovementRange;
     }

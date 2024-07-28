@@ -28,20 +28,10 @@ public class SwordHitBox : MonoBehaviour
 
     void Start()
     {
-        
         attackOffset = transform.localPosition;
     }
 
-    void FixedUpdate()
-    {
-
-    }
-
-    void Update()
-    {
-        // EndAttack();
-    }
-
+   
     public void WeaponDirection()
     {
         if (player.IsFacingRight)

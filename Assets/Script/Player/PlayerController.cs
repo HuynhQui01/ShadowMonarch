@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : Singleton<PlayerController>
+public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float MaxArmor = 100f;
@@ -40,9 +40,8 @@ public class PlayerController : Singleton<PlayerController>
     bool canMove = true;
     bool isDashing = false;
 
-    protected override void Awake()
+    protected  void Awake()
     {
-        base.Awake();
         swordHitBox = GetComponentInChildren<SwordHitBox>();
         playerAction = new PlayerAction();
         rb = GetComponent<Rigidbody2D>();

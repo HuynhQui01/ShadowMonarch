@@ -31,10 +31,4 @@ public class EnemyMoveState : EnemyState
         base.PhysicsUpdate();
         enemy.EnemyMoveBaseInstance.DoPhysicUpdateLogic();
     }
-    public override void AnimationTriggerEvent(Enemy.AnimationTriggerType triggerType)
-    {
-        base.AnimationTriggerEvent(triggerType);
-                enemy.EnemyMoveBaseInstance.DoAnimationTriggerEventLogic(triggerType);
-
-    }
 }

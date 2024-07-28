@@ -26,6 +26,5 @@ public class EnemyIdelSOBase : ScriptableObject
         
     }
     public virtual void DoPhysicUpdateLogic(){}
-    public virtual void DoAnimationTriggerEventLogic(Enemy.AnimationTriggerType triggerType){}
     public virtual void ResetValues(){}
 }

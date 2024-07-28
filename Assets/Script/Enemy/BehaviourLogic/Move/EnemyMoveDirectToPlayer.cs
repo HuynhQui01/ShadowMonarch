@@ -46,9 +46,4 @@ public class EnemyMoveDirectToPlayer : EnemyMoveSOBase
         base.DoPhysicUpdateLogic();
     }
 
-    public override void DoAnimationTriggerEventLogic(Enemy.AnimationTriggerType triggerType)
-    {
-        base.DoAnimationTriggerEventLogic(triggerType);
-    }
-
 }

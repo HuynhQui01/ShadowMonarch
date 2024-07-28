@@ -26,10 +26,6 @@ public class EnemyIdleState : EnemyState
         base.PhysicsUpdate();
         enemy.EnemyIdleBaseInstance.DoPhysicUpdateLogic();
     }
-    public override void AnimationTriggerEvent(Enemy.AnimationTriggerType triggerType){
-        base.AnimationTriggerEvent(triggerType);
-        enemy.EnemyIdleBaseInstance.DoAnimationTriggerEventLogic(triggerType);
-    }
 
     
 }

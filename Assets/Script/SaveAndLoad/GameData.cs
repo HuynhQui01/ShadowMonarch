@@ -1,15 +1,18 @@
 using System;
+using System.Collections.Generic;
+using UnityEditor.PackageManager;
 
 [Serializable]
 public class GameData
 {
     public float[] position;
     public int coin;
-    public Helmet helmet;
-    public Chestplate chestplate;
-    public Legging leggings;
-    public Boots boots;
-    
+    public InventoryManager inventoryManager;
+    public float experience;
+    public int level;
+    public float MaxExperience;
+    public List<Equipments> equipmentsList;
+    public List<Items> itemsList;
 
     public GameData(Player player)
     {
@@ -19,9 +22,12 @@ public class GameData
         position[2] = player.transform.position.z;
 
         this.coin = player.coin;
-        this.helmet = player.Helmet;
-        this.chestplate = player.Chestplate;
-        this.leggings = player.Leggings;
-        this.boots = player.Boots;
+        inventoryManager = player.inventoryManager;
+        experience = player.Experience;
+        level = player.Level;
+        MaxExperience = player.MaxExperience;
+        equipmentsList = player.equipmentsList;
+        itemsList = player.itemsList;
+
     }
 }

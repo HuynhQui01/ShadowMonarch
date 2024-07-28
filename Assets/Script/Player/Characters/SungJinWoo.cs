@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class SungJinWoo : Player
 {
-   
+public string characterName = "Sung Jin-Woo";
 }
