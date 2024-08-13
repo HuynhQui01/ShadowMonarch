@@ -84,6 +84,12 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
     {
         // Destroy(gameObject);
         isDead = true;
+        StartCoroutine(DestroyEnemy());
+    }
+    IEnumerator DestroyEnemy()
+    {
+        yield return new WaitForSeconds(2f);
+        Destroy(gameObject);
     }
 
     public void MoveEnemy(Vector2 velocity)

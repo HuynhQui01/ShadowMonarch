@@ -1,73 +1,111 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SkillManager : MonoBehaviour
 {
     public ThePowerOfTheMonarch thePowerOfTheMonarch;
     public CriticalSlash criticalSlash;
     public Rise rise;
+    public ArmorRegenaration armorRegenaration;
     public SkilCDUI skilCDUI;
-    
+    public List<ISkill> allSkills = new List<ISkill>();
+    public List<ISkill> skillsEquipped = new List<ISkill>();
 
-    void Awake(){
-        thePowerOfTheMonarch = FindObjectOfType<ThePowerOfTheMonarch>();
-        criticalSlash = FindAnyObjectByType<CriticalSlash>();
-        rise = FindAnyObjectByType<Rise>();
+
+    void Awake()
+    {
     }
 
-    void Start(){
+    void Start()
+    {
+        AddSkill();
         SetCDUI();
     }
 
-    void Update(){
-        CDSkill1Update();
-        CDSkill2Update();
-        CDSpecialSkillUpdate();
+    void AddSkill()
+    {
+        allSkills.Add(thePowerOfTheMonarch);
+        allSkills.Add(criticalSlash);
+        allSkills.Add(rise);
+        allSkills.Add(armorRegenaration);
+        for (int i = 0; i < allSkills.Count; i++)
+        {
+            if (allSkills[i].IsEquipped)
+            {
+                skillsEquipped.Add(allSkills[i]);
+                Image image = skilCDUI.sliders[i].GetComponentInChildren<Image>();
+                image.sprite = allSkills[i].sprite;
+            }
+        }
+       
     }
 
-    public void CDSkill1Update(){
-        if (criticalSlash.isCD) 
+    void Update()
+    {
+        if (skillsEquipped.Count > 0) CDSkill1Update();
+        if (skillsEquipped.Count > 1) CDSkill2Update();
+        if (skillsEquipped.Count > 2) CDSpecialSkillUpdate();
+    }
+
+    public void CDSkill1Update()
+    {
+        if (skillsEquipped.Count > 0 && skillsEquipped[0].IsCD)
         {
             skilCDUI.sliders[0].value += Time.deltaTime;
             if (skilCDUI.sliders[0].value >= skilCDUI.sliders[0].maxValue)
             {
-                criticalSlash.isCD = false; // Reset cooldown state
+                skillsEquipped[0].IsCD = false; // Reset cooldown state
                 skilCDUI.sliders[0].value = 0; // Reset slider value
             }
         }
     }
-    public void CDSkill2Update(){
-        if (thePowerOfTheMonarch.isCD) 
+
+    public void CDSkill2Update()
+    {
+        if (skillsEquipped.Count > 1 && skillsEquipped[1].IsCD)
         {
             skilCDUI.sliders[1].value += Time.deltaTime;
             if (skilCDUI.sliders[1].value >= skilCDUI.sliders[1].maxValue)
             {
-                thePowerOfTheMonarch.isCD = false; // Reset cooldown state
-                skilCDUI.sliders[1].value = 0; // Reset slider value
+                skillsEquipped[1].IsCD = false; 
+                skilCDUI.sliders[1].value = 0; 
             }
         }
     }
-    public void CDSpecialSkillUpdate(){
-        if (rise.isCD) 
+
+    public void CDSpecialSkillUpdate()
+    {
+        if (skillsEquipped.Count > 2 && skillsEquipped[2].IsCD)
         {
             skilCDUI.sliders[2].value += Time.deltaTime;
             if (skilCDUI.sliders[2].value >= skilCDUI.sliders[2].maxValue)
             {
-                rise.isCD = false; // Reset cooldown state
-                skilCDUI.sliders[2].value = 0; // Reset slider value
+                skillsEquipped[2].IsCD = false; 
+                skilCDUI.sliders[2].value = 0; 
             }
         }
     }
 
-    void SetCDUI(){
-        skilCDUI.sliders[0].maxValue = criticalSlash.cd;
-        skilCDUI.sliders[0].value = 0;
+    void SetCDUI()
+    {
+        if (skillsEquipped.Count > 0)
+        {
+            skilCDUI.sliders[0].maxValue = skillsEquipped[0].CD;
+            skilCDUI.sliders[0].value = 0;
+        }
 
-        skilCDUI.sliders[1].maxValue = thePowerOfTheMonarch.cd;
-        skilCDUI.sliders[1].value = 0;
+        if (skillsEquipped.Count > 1)
+        {
+            skilCDUI.sliders[1].maxValue = skillsEquipped[1].CD;
+            skilCDUI.sliders[1].value = 0;
+        }
 
-        skilCDUI.sliders[2].maxValue = rise.cd;
-        skilCDUI.sliders[2].value = 0;
+        if (skillsEquipped.Count > 2)
+        {
+            skilCDUI.sliders[2].maxValue = skillsEquipped[2].CD;
+            skilCDUI.sliders[2].value = 0;
+        }
     }
 }

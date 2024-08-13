@@ -15,7 +15,6 @@ public class EnemyMoveDirectToPlayer : EnemyMoveSOBase
     public override void DoEnterLogic()
     {
         base.DoEnterLogic();
-
     }
 
     public override void DoExitLogic()

@@ -31,8 +31,17 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.2
+        time: 0.4
         value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.6
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -51,13 +60,23 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 21300000, guid: d6f3c0f0b3155ce489d80170b86a9acf, type: 3}
+      value: {fileID: 21300000, guid: 9aba2d51bf019d14ea17ae366feb211b, type: 3}
+    - time: 0.1
+      value: {fileID: 21300000, guid: 9aba2d51bf019d14ea17ae366feb211b, type: 3}
+    - time: 0.2
+      value: {fileID: 21300000, guid: c67daabc7608bd74f8be83427139c081, type: 3}
+    - time: 0.3
+      value: {fileID: 21300000, guid: ecf165101f303b44faecc1b197c4eda7, type: 3}
+    - time: 0.4
+      value: {fileID: 21300000, guid: d8372d38eb02e934d8fa480fb4fbc6ba, type: 3}
+    - time: 0.5
+      value: {fileID: 21300000, guid: 2f83f3e77bca29344a88d7b32cfa37fd, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 5
+  m_SampleRate: 10
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -83,13 +102,18 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: d6f3c0f0b3155ce489d80170b86a9acf, type: 3}
+    - {fileID: 21300000, guid: 9aba2d51bf019d14ea17ae366feb211b, type: 3}
+    - {fileID: 21300000, guid: 9aba2d51bf019d14ea17ae366feb211b, type: 3}
+    - {fileID: 21300000, guid: c67daabc7608bd74f8be83427139c081, type: 3}
+    - {fileID: 21300000, guid: ecf165101f303b44faecc1b197c4eda7, type: 3}
+    - {fileID: 21300000, guid: d8372d38eb02e934d8fa480fb4fbc6ba, type: 3}
+    - {fileID: 21300000, guid: 2f83f3e77bca29344a88d7b32cfa37fd, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.2
+    m_StopTime: 0.6
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -119,8 +143,17 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.2
+        time: 0.4
         value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.6
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103

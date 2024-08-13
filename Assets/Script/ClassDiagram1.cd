@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Player" Collapsed="true">
+    <Position X="6.5" Y="1" Width="1.5" />
+    <Members>
+      <Property Name="playerIdleState" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>DiQQARCAgmB+CDAgACCECwQBWDSQtCkFQAAggkIAQGE=</HashCode>
+      <FileName>Assets\Script\Player\Base\Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="skillManager" />
+      <Field Name="targetArea" />
+      <Property Name="playerIdleState" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SungJinWoo" Collapsed="true">
+    <Position X="9" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Player\Characters\SungJinWoo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SkillManager" Collapsed="true">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAAAAACAAQAAAAAQAAAAAEAAIAAAACAAAAAAAAUA=</HashCode>
+      <FileName>Assets\Script\Player\SkillManagement\SkillManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="thePowerOfTheMonarch" />
+      <Field Name="criticalSlash" />
+      <Field Name="rise" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CriticalSlash" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAACAAAACAAgAAAIAAAAAAEAFAEAAAhAAAAAAAIAEA=</HashCode>
+      <FileName>Assets\Script\Player\SkillManagement\CriticalSlash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rise" Collapsed="true">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAAACAAACAAIAAAEAAEABAEACAAAAAAAAAIAAA=</HashCode>
+      <FileName>Assets\Script\Player\SkillManagement\Rise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThePowerOfTheMonarch" Collapsed="true">
+    <Position X="10" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAACAAAACAAgAAAIIAAAAAEAFAEQAAhAAAAAAAIAEA=</HashCode>
+      <FileName>Assets\Script\Player\SkillManagement\ThePowerOfTheMonarch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerAttackState" Collapsed="true">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAACAAA=</HashCode>
+      <FileName>Assets\Script\Player\StateMachine\ConcreteState\PlayerAttackState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerDashState" Collapsed="true">
+    <Position X="3.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABABEAAEAAAIAAAAAAAQAAQAAAAAAAIAAAACAAA=</HashCode>
+      <FileName>Assets\Script\Player\StateMachine\ConcreteState\PlayerDashState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerGetHitState" Collapsed="true">
+    <Position X="3.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAACAAA=</HashCode>
+      <FileName>Assets\Script\Player\StateMachine\ConcreteState\PlayerGetHitState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerIdleState" Collapsed="true">
+    <Position X="3.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAACAAA=</HashCode>
+      <FileName>Assets\Script\Player\StateMachine\ConcreteState\PlayerIdleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerMoveState" Collapsed="true">
+    <Position X="3.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAEAAEAAAAAAAAAAAQAAAAAAAAAAIAAAACAAA=</HashCode>
+      <FileName>Assets\Script\Player\StateMachine\ConcreteState\PlayerMoveState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerUseSkillState" Collapsed="true">
+    <Position X="3.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEBAAAAAAAIAAAAAAAAAQAAAAAAAAAAIAAAACAAA=</HashCode>
+      <FileName>Assets\Script\Player\StateMachine\ConcreteState\PlayerUseSkillState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerState" Collapsed="true">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAACAAAAAQAAAAAAABAAIgBAACAAA=</HashCode>
+      <FileName>Assets\Script\Player\StateMachine\PlayerState.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="player" />
+      <Field Name="playerStateMachine" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayerStateMachine" Collapsed="true">
+    <Position X="3" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABQACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Player\StateMachine\PlayerStateMachine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TargetArea" Collapsed="true">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAiAACAAAAAAAAAAAAAAAEAAAAABAAAAAEAAAAA=</HashCode>
+      <FileName>Assets\Script\Player\TriggerCheck\TargetArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

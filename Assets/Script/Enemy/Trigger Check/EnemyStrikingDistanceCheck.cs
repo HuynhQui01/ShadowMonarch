@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class EnemyStrikingDistanceCheck : MonoBehaviour
 {
-    // public GameObject PlayerTarget { get; set; }
     Enemy enemy;
 
     void Awake(){
-        // PlayerTarget = GameObject.FindGameObjectsWithTag("Player")[0];
 
         enemy = GetComponentInParent<Enemy>();
 

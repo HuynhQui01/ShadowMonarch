@@ -13,7 +13,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
     [field: SerializeField] public float MaxArmor { get; set; } = 50f;
     public float CurrentArmor { get; set; }
     [field: SerializeField] public float Damage { get; set; }
-    [field: SerializeField] public float MoveSpeed { get; set; } = 10f;
+    [field: SerializeField] public float MoveSpeed { get; set; } = 2f;
     [field: SerializeField] public float Defence { get; set; }
     [field: SerializeField] public float Experience { get; set; }
     [field: SerializeField] public int Level { get; set; }
@@ -28,6 +28,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
     public PlayerMoveState playerMovementState { get; set; }
     public PlayerDashState playerDashState { get; set; }
     public PlayerIdleState playerIdleState { get; set; }
+    public PlayerGetHitState playerGetHitState { get; set; }
     public PlayerUseSkillState playerUseSkillState { get; set; }
     public static Player Instance;
 
@@ -55,6 +56,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
     public InventoryManager inventoryManager;
     public TargetArea targetArea;
     public SkillUIPanel SkillUIPanel;
+    public bool canMove = true;
 
 
 
@@ -75,6 +77,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
         playerDashState = new PlayerDashState(this, playerStateMachine);
         playerIdleState = new PlayerIdleState(this, playerStateMachine);
         playerUseSkillState = new PlayerUseSkillState(this, playerStateMachine);
+        playerGetHitState = new PlayerGetHitState(this, playerStateMachine);
         playerAction = new PlayerAction();
         animator = GetComponent<Animator>();
         dashEffect = GetComponent<DashEffect>();
@@ -114,13 +117,14 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
     {
         SkillUIPanel.gameObject.SetActive(true);
         Debug.Log("Open Skill Panel");
+        Time.timeScale = 0;
     }
 
     void CloseSkillPanel()
     {
         SkillUIPanel.gameObject.SetActive(false);
         SkillUIPanel.skillDetail.SetActive(false);
-
+        Time.timeScale = 1;
     }
 
     private void InventoryShowAndHide()
@@ -230,6 +234,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
 
     public void RegenerateArmor()
     {
+        
         CurrentArmor += regenArmorRate;
         armorBar.SetArmor(CurrentArmor);
         Debug.Log(CurrentArmor);
@@ -242,11 +247,6 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
     void FixedUpdate()
     {
         playerStateMachine.currentPlayerState.PhysicsUpdate();
-    }
-
-    private void AnimationTriggerEvent(AnimationTriggerType triggerType)
-    {
-        playerStateMachine.currentPlayerState.AnimationTriggerEvent(triggerType);
     }
 
     public void CheckForLeftOrRightFacing(Vector2 velocity)
@@ -272,19 +272,20 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
 
     public void TakeDamage(float damageAmout)
     {
-        // if (CurrentArmor > 0)
-        // {
-        //     CurrentArmor -= damageAmout;
-        //     armorBar.SetArmor(CurrentArmor);
-        // }
-        // else
-        // {
-        //     CurrentHealth -= damageAmout;
-        //     healthbars.SetHealth(CurrentHealth);
-        // }
-        // lastDamageTime = Time.time;
-        // Debug.Log(CurrentHealth);
-        // if (CurrentHealth <= 0) Die();
+        if (CurrentArmor > 0)
+        {
+            CurrentArmor -= damageAmout;
+            armorBar.SetArmor(CurrentArmor);
+        }
+        else
+        {
+            CurrentHealth -= damageAmout;
+            healthbars.SetHealth(CurrentHealth);
+        }
+        lastDamageTime = Time.time;
+        playerStateMachine.ChangeState(playerGetHitState);
+        Debug.Log(CurrentHealth);
+        if (CurrentHealth <= 0) Die();
     }
 
     public void SaveGame()

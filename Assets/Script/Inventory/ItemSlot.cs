@@ -62,8 +62,6 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         }
     }
 
-
-
     public void OnLeftClick(PointerEventData eventData)
     {
         if (eventData.button == PointerEventData.InputButton.Left && eventData.clickCount == 2)

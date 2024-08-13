@@ -23,7 +23,7 @@ public class PlayerDashState : PlayerState
             isDashing = true;
             player.animator.SetBool("isDashing", isDashing);
             movement = player.playerAction.Movement.Move.ReadValue<Vector2>();
-
+            player.gameObject.layer = 5;
 
             player.RB.velocity = movement * moveSpeed * dashSpeed;
             EndDashRountine();
@@ -60,6 +60,7 @@ public class PlayerDashState : PlayerState
         await Task.Delay((int)(dashCD * 1000));
         isDashing = false;
         player.animator.SetBool("isDashing", isDashing);
+        player.gameObject.layer = 0;
 
     }
 }

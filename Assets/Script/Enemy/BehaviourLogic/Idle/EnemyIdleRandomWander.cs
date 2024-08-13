@@ -35,7 +35,6 @@ public class EnemyIdleRandomWander : EnemyIdelSOBase
         if(enemy.IsAggroed){
             enemy.StateMachine.ChangeState(enemy.MoveState);
         }
-        enemy.animator.SetBool("IsRun", true);
         
         dir = (targetPos - enemy.transform.position).normalized;
         enemy.MoveEnemy(dir * RandomMovementSpeed);

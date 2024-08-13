@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class ActiveSkills : MonoBehaviour, IPointerClickHandler
 {
-    SkillManager skillManager;
+    public SkillManager skillManager;
     public Image image;
     public Sprite empty;
     public Image imageDescription;
@@ -20,20 +20,13 @@ public class ActiveSkills : MonoBehaviour, IPointerClickHandler
         skillManager = FindAnyObjectByType<SkillManager>();
         image = GetComponent<Image>();
     }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (eventData.button == PointerEventData.InputButton.Left)
+        if(eventData.button == PointerEventData.InputButton.Left && eventData.clickCount == 2){
+            skillUIPanel.OnDoubleClick(this);
+        }
+        else if (eventData.button == PointerEventData.InputButton.Left)
         {
             skillUIPanel.OnLeftClick(this);
         }

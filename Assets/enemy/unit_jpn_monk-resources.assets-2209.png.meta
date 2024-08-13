@@ -1,0 +1,1359 @@
+fileFormatVersion: 2
+guid: 427e13d5cef949b469fdb44d18f7417d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 579
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc5add01ea7b054dbdbacde8dcc8e35
+      internalID: -1142060054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 579
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902c4b1edfa879f49b75a51176f9b441
+      internalID: -928644742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 579
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ddd9a6067032284c9480fdf59f3acdf
+      internalID: -1680995390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_3
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 579
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0e4837f20b6d34dafd0b1506dd7e2d
+      internalID: -207973824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_4
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 579
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6cee0c273fe1244b99782455c0a48f
+      internalID: -1839088783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_5
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 579
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa9c7bdeca0e2c4281aa8fc479e9b3d
+      internalID: 1838533557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_6
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 579
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54eea22c5c5979b4f9d2d9a4bded7598
+      internalID: -1078725324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_8
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 579
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75eec69b72c95f4f8ff00fd864e16b7
+      internalID: 541445591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 519
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfbe96975ec86243ad3874f5dcb9c17
+      internalID: -1584125596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_10
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 519
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061f279e5e944b64da04d94fdf301cdb
+      internalID: 185112961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_12
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 518
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6306fac234166243b745286f6e0273b
+      internalID: 2017570900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_14
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 518
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85e464b28ac73843905a98478704982
+      internalID: -1853971892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_15
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 518
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9362685b27875469d00ee997107298
+      internalID: 1312205310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_16
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 518
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5f17b59c1af8241843f43c0324c939
+      internalID: -968954022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_17
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 518
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f6efd61d854f046820d7da0d27cb30
+      internalID: 1383662046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_18
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 518
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f77c3c25c3fc047a9598618c81300c
+      internalID: 1017631498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_19
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 463
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d83f6aeae2d18e468791c8bcf444327
+      internalID: -1318043066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_20
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 464
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fb189b5a7f15d40a5b29c70b7d41f7
+      internalID: 928621167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_33
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 399
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6f182027dc2db4e81e12185556ae50
+      internalID: -277093816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_34
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 344
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c26b254e34e9194abf83eb15cac4d95
+      internalID: -1205001337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_35
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 344
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230e874b8fafb7346a0a31358d5a63ac
+      internalID: 2082374564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_36
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 399
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec41b011661a9684ea5ea2032c4176d1
+      internalID: 1067473572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_38
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 399
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635907615230ea445a150d1e7ba456dd
+      internalID: -1229750523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_39
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 344
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9e9825ceaef2842ac2b5b3bd0a6b2e
+      internalID: -1746824968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_40
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 399
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e76ad1f360f104f98a4fc3cc0803aa
+      internalID: -534573784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_41
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 344
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b8ef51b410055429e4a30e032535d4
+      internalID: -2129533522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_42
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 399
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce141fc2e201ff54fb8a02c80068e1cd
+      internalID: -1440111215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_43
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 399
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dee39ad32d468c46a4a1bcf3d6c52c7
+      internalID: -992834327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_44
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 287
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6422e82bfd5ae459392feb46c41977
+      internalID: 1515111567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_45
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 287
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c3039de45fa6346ac3c445ca94e0a0
+      internalID: -884369965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_47
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 287
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f84e3449609fc4996c3cea8e6a344e
+      internalID: -1770291421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_49
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 287
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9213aac1542ba514a8d252aae2eb1978
+      internalID: 667305852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_50
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 231
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1980342de7a454db42de5e6d83d91a
+      internalID: 1320147475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_51
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 231
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde6796642416c84bbc1d7ce5fb2d7aa
+      internalID: -470424126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_52
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 231
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea71d62e6b1bf944a8316195dee6044
+      internalID: 2115218265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_53
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 231
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a0f8b07b952a14d8ac4f77a5c9d541
+      internalID: 1838877531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_58
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 174
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471109f7686045f4aaf2d51daf08fc03
+      internalID: -770126102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_59
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 173
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580ea6e9e79214549bad3c955a7b04b3
+      internalID: -2059597273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_61
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 174
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b0aa431a2e15d4d92e13164bfdfa12
+      internalID: -1585939993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_62
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 174
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f95304364d88b4ebc02f03dba66ade
+      internalID: 1421579218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_64
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 134
+        width: 54
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4487c50d14cd84d91cb5e8af9e6755
+      internalID: 1555756063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_65
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 132
+        width: 56
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cb760175ad438478167d73afa787d5
+      internalID: 1422977515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_66
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 132
+        width: 59
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1180669be58b7d346b09460c49b02825
+      internalID: 569263049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_67
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 172
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37ef7e451ecb1c4c8ef896026994666
+      internalID: 1987736180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_69
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 171
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcacd041cc6e1e941b462a367f349e42
+      internalID: 64974825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_71
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 73
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba571d265b3950242a01bd6372cfc0dd
+      internalID: -1703634793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_72
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 73
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a0b3843a73ddf4ca16e122e5c0c8d2
+      internalID: -1474670020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_73
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 73
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120c199b0075eb740b442026eec74bc3
+      internalID: 1932462155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_74
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 70
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffac5297e4606854ba0360ab90b700f1
+      internalID: -1598603901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_76
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 67
+        width: 54
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e722db8655a9449b3a4f5cabedd930
+      internalID: 1899728794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_77
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 67
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f665c9de01a3844fad4edcce0b1e3a4
+      internalID: 2115455958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_84
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 14
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f199e73a517f3c4e8c57b2d6f5d8f3f
+      internalID: -1088983030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_85
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 14
+        width: 66
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de2afc9b9f7cca47b260ca6e9411f56
+      internalID: -485908644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_87
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 14
+        width: 66
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205a9ec79e2738a46961ca8cd4b55077
+      internalID: 1528840064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unit_jpn_monk-resources.assets-2209_88
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 14
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9177c8c05c4b5484da19d922fe4655f3
+      internalID: -461932378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      unit_jpn_monk-resources.assets-2209_0: -1142060054
+      unit_jpn_monk-resources.assets-2209_1: -928644742
+      unit_jpn_monk-resources.assets-2209_10: 185112961
+      unit_jpn_monk-resources.assets-2209_11: -811566943
+      unit_jpn_monk-resources.assets-2209_12: 2017570900
+      unit_jpn_monk-resources.assets-2209_13: 1903413500
+      unit_jpn_monk-resources.assets-2209_14: -1853971892
+      unit_jpn_monk-resources.assets-2209_15: 1312205310
+      unit_jpn_monk-resources.assets-2209_16: -968954022
+      unit_jpn_monk-resources.assets-2209_17: 1383662046
+      unit_jpn_monk-resources.assets-2209_18: 1017631498
+      unit_jpn_monk-resources.assets-2209_19: -1318043066
+      unit_jpn_monk-resources.assets-2209_2: -1680995390
+      unit_jpn_monk-resources.assets-2209_20: 928621167
+      unit_jpn_monk-resources.assets-2209_21: -2135638459
+      unit_jpn_monk-resources.assets-2209_22: 1615983602
+      unit_jpn_monk-resources.assets-2209_23: -1096558948
+      unit_jpn_monk-resources.assets-2209_24: 1905950601
+      unit_jpn_monk-resources.assets-2209_25: 346630520
+      unit_jpn_monk-resources.assets-2209_26: 618679742
+      unit_jpn_monk-resources.assets-2209_27: 1706420913
+      unit_jpn_monk-resources.assets-2209_28: 599947281
+      unit_jpn_monk-resources.assets-2209_29: -962540557
+      unit_jpn_monk-resources.assets-2209_3: -207973824
+      unit_jpn_monk-resources.assets-2209_30: 1493282116
+      unit_jpn_monk-resources.assets-2209_31: -1707164524
+      unit_jpn_monk-resources.assets-2209_32: -475359762
+      unit_jpn_monk-resources.assets-2209_33: -277093816
+      unit_jpn_monk-resources.assets-2209_34: -1205001337
+      unit_jpn_monk-resources.assets-2209_35: 2082374564
+      unit_jpn_monk-resources.assets-2209_36: 1067473572
+      unit_jpn_monk-resources.assets-2209_37: 2012667842
+      unit_jpn_monk-resources.assets-2209_38: -1229750523
+      unit_jpn_monk-resources.assets-2209_39: -1746824968
+      unit_jpn_monk-resources.assets-2209_4: -1839088783
+      unit_jpn_monk-resources.assets-2209_40: -534573784
+      unit_jpn_monk-resources.assets-2209_41: -2129533522
+      unit_jpn_monk-resources.assets-2209_42: -1440111215
+      unit_jpn_monk-resources.assets-2209_43: -992834327
+      unit_jpn_monk-resources.assets-2209_44: 1515111567
+      unit_jpn_monk-resources.assets-2209_45: -884369965
+      unit_jpn_monk-resources.assets-2209_46: 548018849
+      unit_jpn_monk-resources.assets-2209_47: -1770291421
+      unit_jpn_monk-resources.assets-2209_48: -1341395327
+      unit_jpn_monk-resources.assets-2209_49: 667305852
+      unit_jpn_monk-resources.assets-2209_5: 1838533557
+      unit_jpn_monk-resources.assets-2209_50: 1320147475
+      unit_jpn_monk-resources.assets-2209_51: -470424126
+      unit_jpn_monk-resources.assets-2209_52: 2115218265
+      unit_jpn_monk-resources.assets-2209_53: 1838877531
+      unit_jpn_monk-resources.assets-2209_54: -1623702194
+      unit_jpn_monk-resources.assets-2209_55: 1447369024
+      unit_jpn_monk-resources.assets-2209_56: 543519877
+      unit_jpn_monk-resources.assets-2209_57: -56447904
+      unit_jpn_monk-resources.assets-2209_58: -770126102
+      unit_jpn_monk-resources.assets-2209_59: -2059597273
+      unit_jpn_monk-resources.assets-2209_6: -1078725324
+      unit_jpn_monk-resources.assets-2209_60: -431460257
+      unit_jpn_monk-resources.assets-2209_61: -1585939993
+      unit_jpn_monk-resources.assets-2209_62: 1421579218
+      unit_jpn_monk-resources.assets-2209_63: -189798594
+      unit_jpn_monk-resources.assets-2209_64: 1555756063
+      unit_jpn_monk-resources.assets-2209_65: 1422977515
+      unit_jpn_monk-resources.assets-2209_66: 569263049
+      unit_jpn_monk-resources.assets-2209_67: 1987736180
+      unit_jpn_monk-resources.assets-2209_68: 153253191
+      unit_jpn_monk-resources.assets-2209_69: 64974825
+      unit_jpn_monk-resources.assets-2209_7: -143209222
+      unit_jpn_monk-resources.assets-2209_70: 1916036739
+      unit_jpn_monk-resources.assets-2209_71: -1703634793
+      unit_jpn_monk-resources.assets-2209_72: -1474670020
+      unit_jpn_monk-resources.assets-2209_73: 1932462155
+      unit_jpn_monk-resources.assets-2209_74: -1598603901
+      unit_jpn_monk-resources.assets-2209_75: -225181519
+      unit_jpn_monk-resources.assets-2209_76: 1899728794
+      unit_jpn_monk-resources.assets-2209_77: 2115455958
+      unit_jpn_monk-resources.assets-2209_78: 255676813
+      unit_jpn_monk-resources.assets-2209_79: 777752402
+      unit_jpn_monk-resources.assets-2209_8: 541445591
+      unit_jpn_monk-resources.assets-2209_80: -662498171
+      unit_jpn_monk-resources.assets-2209_81: 125467812
+      unit_jpn_monk-resources.assets-2209_82: -1930005366
+      unit_jpn_monk-resources.assets-2209_83: -185087228
+      unit_jpn_monk-resources.assets-2209_84: -1088983030
+      unit_jpn_monk-resources.assets-2209_85: -485908644
+      unit_jpn_monk-resources.assets-2209_86: -270509056
+      unit_jpn_monk-resources.assets-2209_87: 1528840064
+      unit_jpn_monk-resources.assets-2209_88: -461932378
+      unit_jpn_monk-resources.assets-2209_89: -1819196787
+      unit_jpn_monk-resources.assets-2209_9: -1584125596
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

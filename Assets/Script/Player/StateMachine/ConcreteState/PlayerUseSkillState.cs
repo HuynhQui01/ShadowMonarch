@@ -14,13 +14,10 @@ public class PlayerUseSkillState : PlayerState
         base.EnterState();
         if (player.playerAction.Combat.Skill1.IsPressed())
         {
-            if (!player.skillManager.thePowerOfTheMonarch.isCD)
+            if (!player.skillManager.skillsEquipped[0].IsCD)
             {
-                player.skillManager.thePowerOfTheMonarch.Active();
-
-                player.skillManager.thePowerOfTheMonarch.animator.Play("Active");
+                player.skillManager.skillsEquipped[0].Active();
                 WaitForCDSkill1();
-                
             }
             else
             {
@@ -30,15 +27,17 @@ public class PlayerUseSkillState : PlayerState
         }
         if (player.playerAction.Combat.Skill2.IsPressed())
         {
-            if (!player.skillManager.criticalSlash.isCD)
+            if (!player.skillManager.skillsEquipped[0].IsCD)
             {
-                if (player.targetArea.Enemy)
+                if (player.targetArea.enemies.Count > 0)
                 {
-                    player.RB.constraints = RigidbodyConstraints2D.FreezePositionY;
-                    player.RB.MovePosition(player.transform.position + ((player.targetArea.Enemy.transform.position - player.transform.position).normalized * 3));
+                    player.gameObject.layer = 5;
+                    player.RB.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+                    Vector2 velocity = player.transform.position + ((player.targetArea.enemies[0].transform.position - player.transform.position).normalized * 3);
+                    player.CheckForLeftOrRightFacing(velocity);
+                    player.RB.MovePosition(velocity);
                     player.animator.SetBool("isDashing", true);
-                    player.skillManager.criticalSlash.animator.Play("Active");
-                    player.skillManager.criticalSlash.Active();
+                    player.skillManager.skillsEquipped[1].Active();
                     WaitForCDSkill2();
                 }
                 else
@@ -55,13 +54,9 @@ public class PlayerUseSkillState : PlayerState
         }
         if (player.playerAction.Combat.SpecialSkill.IsPressed())
         {
-            if (!player.skillManager.rise.isCD)
+            if (!player.skillManager.skillsEquipped[2].IsCD)
             {
-                player.skillManager.rise.gameObject.SetActive(true);
-                player.skillManager.rise.spriteRenderer.enabled = true;
-                player.skillManager.rise.animator.enabled = true;
-                player.skillManager.rise.animator.Play("Rise");
-                player.skillManager.rise.UseSkill();
+                player.skillManager.skillsEquipped[2].Active();
                 WaitForCDSpecialSkill();
 
             }
@@ -77,31 +72,38 @@ public class PlayerUseSkillState : PlayerState
     public override void ExitState()
     {
         base.ExitState();
-        player.skillManager.thePowerOfTheMonarch.InActive();
-        player.skillManager.criticalSlash.Deactive();
         player.animator.SetBool("isDashing", false);
         player.RB.constraints = RigidbodyConstraints2D.FreezeRotation;
+        player.gameObject.layer = 0;
+
+
 
     }
 
     public override void FrameUpdate()
     {
         base.FrameUpdate();
-        AnimatorStateInfo stateInfoSkill1 = player.skillManager.thePowerOfTheMonarch.animator.GetCurrentAnimatorStateInfo(0);
-        AnimatorStateInfo stateInfoSkill2 = player.skillManager.criticalSlash.animator.GetCurrentAnimatorStateInfo(0);
-        AnimatorStateInfo specialSkill = player.skillManager.rise.animator.GetCurrentAnimatorStateInfo(0);
+
+        AnimatorStateInfo stateInfoSkill1 = player.skillManager.skillsEquipped[0].GetAnimatorStateInfo();
+        AnimatorStateInfo stateInfoSkill2 = player.skillManager.skillsEquipped[1].GetAnimatorStateInfo();
+        AnimatorStateInfo specialSkill = player.skillManager.skillsEquipped[2].GetAnimatorStateInfo();
 
         if (stateInfoSkill1.normalizedTime >= 1.0f)
         {
+            player.skillManager.skillsEquipped[0].DeActive();
             player.playerStateMachine.ChangeState(player.playerIdleState);
         }
 
         if (stateInfoSkill2.normalizedTime >= 1.0f)
         {
+            player.skillManager.skillsEquipped[1].DeActive();
+
             player.playerStateMachine.ChangeState(player.playerIdleState);
         }
         if (specialSkill.normalizedTime >= 1.0f)
         {
+            player.skillManager.skillsEquipped[2].DeActive();
+
             player.playerStateMachine.ChangeState(player.playerIdleState);
 
         }
@@ -116,21 +118,21 @@ public class PlayerUseSkillState : PlayerState
 
     async void WaitForCDSkill1()
     {
-        player.skillManager.thePowerOfTheMonarch.isCD = true;
-        await Task.Delay((int)(player.skillManager.thePowerOfTheMonarch.cd * 1000));
-        player.skillManager.thePowerOfTheMonarch.isCD = false;
+        player.skillManager.skillsEquipped[0].IsCD = true;
+        await Task.Delay((int)(player.skillManager.skillsEquipped[0].CD * 1000));
+        player.skillManager.skillsEquipped[0].IsCD = false;
 
     }
     async void WaitForCDSkill2()
     {
-        player.skillManager.criticalSlash.isCD = true;
-        await Task.Delay((int)(player.skillManager.criticalSlash.cd * 1000));
-        player.skillManager.criticalSlash.isCD = false;
+        player.skillManager.skillsEquipped[1].IsCD = true;
+        await Task.Delay((int)(player.skillManager.skillsEquipped[1].CD * 1000));
+        player.skillManager.skillsEquipped[1].IsCD = false;
     }
     async void WaitForCDSpecialSkill()
     {
-        player.skillManager.rise.isCD = true;
-        await Task.Delay((int)(player.skillManager.rise.cd * 1000));
-        player.skillManager.rise.isCD = false;
+        player.skillManager.skillsEquipped[2].IsCD = true;
+        await Task.Delay((int)(player.skillManager.skillsEquipped[2].CD * 1000));
+        player.skillManager.skillsEquipped[1].IsCD = false;
     }
 }
