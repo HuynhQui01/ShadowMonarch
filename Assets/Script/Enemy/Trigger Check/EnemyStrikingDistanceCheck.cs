@@ -7,9 +7,7 @@ public class EnemyStrikingDistanceCheck : MonoBehaviour
     Enemy enemy;
 
     void Awake(){
-
         enemy = GetComponentInParent<Enemy>();
-
     }
 
     void OnTriggerEnter2D(Collider2D other)

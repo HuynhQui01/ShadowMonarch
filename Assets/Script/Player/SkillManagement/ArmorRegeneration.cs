@@ -11,6 +11,10 @@ public class ArmorRegenaration :MonoBehaviour, ISkill
     public bool IsUnlocked { get; set; } = false;
     public bool IsEquipped { get; set; } = true;
     [field:SerializeField] public Sprite sprite { get; set; }
+    public float Defence { get; set; }
+    public float MoveSpeed { get; set; }
+        public bool IsActiveSkill {get; set; } = false;
+
     Player player;
     public string description = "Increase armor regeneration rate by 2 per second";
 
@@ -19,14 +23,14 @@ public class ArmorRegenaration :MonoBehaviour, ISkill
     }
 
     void Update(){
-        if(IsEquipped){
-            player.regenArmorRate += BaseDamage;
-        }
+        
     }
 
     public void Active()
     {
-        throw new System.NotImplementedException();
+        if(IsEquipped){
+            player.regenArmorRate += BaseDamage;
+        }
     }
 
     public void DeActive()

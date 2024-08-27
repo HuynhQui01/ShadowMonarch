@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyDeadState : EnemyState
 {
+
     public float experience = 5f;
     public EnemyDeadState(Enemy enemy, EnemyStateMachine enemyStateMachine) : base(enemy, enemyStateMachine)
     {
@@ -13,14 +14,8 @@ public class EnemyDeadState : EnemyState
     {
         base.EnterState();
         enemy.animator.SetBool("IsDead", true);
-        AnimatorStateInfo stateInfo = enemy.animator.GetCurrentAnimatorStateInfo(0);
-
-        if (stateInfo.normalizedTime >= 0.4f)
-        {
-            enemy.player.Experience += experience;
-            enemy.Die();
-        }
-
+        enemy.player.Experience += experience;
+        
     }
 
     public override void ExitState()
@@ -31,7 +26,13 @@ public class EnemyDeadState : EnemyState
     public override void FrameUpdate()
     {
         base.FrameUpdate();
-
+        AnimatorStateInfo stateInfo = enemy.animator.GetCurrentAnimatorStateInfo(0);
+        Debug.Log(stateInfo.normalizedTime);
+        if (stateInfo.normalizedTime >= 1f)
+        {
+            enemy.Die();
+            enemy.StateMachine.ChangeState(enemy.IdleState);
+        }
 
     }
 

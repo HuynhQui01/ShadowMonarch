@@ -10,6 +10,9 @@ public interface ISkill
     bool IsCD { get; set; }
     bool IsUnlocked { get; set; }
     bool IsEquipped { get; set; }
+    float Defence { get; set; }
+    float MoveSpeed { get; set; }
+    bool IsActiveSkill { get; set; }
 
     void Active();
     void DeActive();

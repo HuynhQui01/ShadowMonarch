@@ -27,24 +27,11 @@ public class PlayerUseSkillState : PlayerState
         }
         if (player.playerAction.Combat.Skill2.IsPressed())
         {
-            if (!player.skillManager.skillsEquipped[0].IsCD)
+            if (!player.skillManager.skillsEquipped[1].IsCD)
             {
-                if (player.targetArea.enemies.Count > 0)
-                {
-                    player.gameObject.layer = 5;
-                    player.RB.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
-                    Vector2 velocity = player.transform.position + ((player.targetArea.enemies[0].transform.position - player.transform.position).normalized * 3);
-                    player.CheckForLeftOrRightFacing(velocity);
-                    player.RB.MovePosition(velocity);
-                    player.animator.SetBool("isDashing", true);
-                    player.skillManager.skillsEquipped[1].Active();
-                    WaitForCDSkill2();
-                }
-                else
-                {
-                    player.playerStateMachine.ChangeState(player.playerIdleState);
+                player.skillManager.skillsEquipped[1].Active();
 
-                }
+                WaitForCDSkill2();
             }
             else
             {

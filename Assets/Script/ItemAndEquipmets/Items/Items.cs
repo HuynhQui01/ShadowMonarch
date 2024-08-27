@@ -13,6 +13,7 @@ public class Items : ScriptableObject
     public float moveSpeed;
     public float damage;
     public float defence;
+    public int dropRate;
     public GameObject prefab;
 
     public ItemType itemType = new ItemType();

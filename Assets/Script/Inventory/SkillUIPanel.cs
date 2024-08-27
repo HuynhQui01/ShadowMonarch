@@ -24,6 +24,7 @@ public class SkillUIPanel : MonoBehaviour
         activeSkills[1].image.sprite = skillManager.thePowerOfTheMonarch.sprite;
         activeSkills[2].image.sprite = skillManager.rise.sprite;
         passiveSkills[0].image.sprite = skillManager.armorRegenaration.sprite;
+        jobSkills[0].image.sprite = skillManager.shadowCover.sprite;
     }
 
     public void OnLeftClick(ActiveSkills activeSkill)
@@ -66,7 +67,7 @@ public class SkillUIPanel : MonoBehaviour
                 {
                     activeSkill.skillManager.criticalSlash.IsEquipped = true;
                 }
-                Debug.Log(activeSkill.skillManager.criticalSlash.IsEquipped);
+                // Debug.Log(activeSkill.skillManager.criticalSlash.IsEquipped);
             }
         }
         if (activeSkill.Equals(activeSkills[1]))
@@ -124,7 +125,7 @@ public class SkillUIPanel : MonoBehaviour
                 {
                     passiveSkill.skillManager.armorRegenaration.IsEquipped = true;
                 }
-                Debug.Log(passiveSkill.skillManager.armorRegenaration.IsEquipped);
+                // Debug.Log(passiveSkill.skillManager.armorRegenaration.IsEquipped);
             }
         }
     }

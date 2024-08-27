@@ -12,7 +12,7 @@ public class EnemyStateMachine
     }
 
     public void ChangeState(EnemyState newState){
-        // Debug.Log("Change from " + CurrentEnemyState.getNameState() + "to" + newState.getNameState());
+        Debug.Log("Change from " + CurrentEnemyState.getNameState() + "to " + newState.getNameState());
         CurrentEnemyState.ExitState();
         CurrentEnemyState = newState;
         CurrentEnemyState.EnterState();

@@ -56,6 +56,8 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
     public InventoryManager inventoryManager;
     public TargetArea targetArea;
     public SkillUIPanel SkillUIPanel;
+    public HealthText healthTextPrefab;
+    
     public bool canMove = true;
 
 
@@ -110,13 +112,13 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
         CurrentHealth = MaxHealth;
         CurrentArmor = MaxArmor;
 
-        Debug.Log(MaxHealth);
+        // Debug.Log(MaxHealth);
     }
 
     void OpenSkillPanel()
     {
         SkillUIPanel.gameObject.SetActive(true);
-        Debug.Log("Open Skill Panel");
+        // Debug.Log("Open Skill Panel");
         Time.timeScale = 0;
     }
 
@@ -150,7 +152,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
             equipmentsList.Add(inventoryManager.equipmentSlots[i].equipments);
         }
 
-        Debug.Log(MaxHealth);
+        // Debug.Log(MaxHealth);
     }
 
     public void SetAttributeWhenEquip(Equipments equipments)
@@ -160,7 +162,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
         Defence += equipments.defence;
         MoveSpeed += equipments.movementSpeed;
 
-        Debug.Log(MaxHealth);
+        // Debug.Log(MaxHealth);
     }
     public void SetAttributeWhenUnequip(Equipments equipments)
     {
@@ -168,7 +170,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
         Damage -= equipments.damage;
         Defence -= equipments.defence;
         MoveSpeed -= equipments.movementSpeed;
-        Debug.Log(MaxHealth);
+        // Debug.Log(MaxHealth);
     }
 
     private void CheckLevel()
@@ -229,7 +231,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
         Damage += 5f;
         regenArmorRate += 0.5f;
         FreePoints += 5f;
-        Debug.Log("Level Up!");
+        // Debug.Log("Level Up!");
     }
 
     public void RegenerateArmor()
@@ -237,7 +239,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
         
         CurrentArmor += regenArmorRate;
         armorBar.SetArmor(CurrentArmor);
-        Debug.Log(CurrentArmor);
+        // Debug.Log(CurrentArmor);
         if (CurrentArmor > MaxArmor)
         {
             CurrentArmor = MaxArmor;
@@ -272,6 +274,11 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
 
     public void TakeDamage(float damageAmout)
     {
+        healthTextPrefab.SetText(damageAmout);
+        RectTransform text = Instantiate(healthTextPrefab).GetComponent<RectTransform>();
+        text.transform.position = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+        Canvas canvas =  GameObject.FindAnyObjectByType<Canvas>();
+        text.SetParent(canvas.transform);
         if (CurrentArmor > 0)
         {
             CurrentArmor -= damageAmout;
@@ -284,7 +291,6 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
         }
         lastDamageTime = Time.time;
         playerStateMachine.ChangeState(playerGetHitState);
-        Debug.Log(CurrentHealth);
         if (CurrentHealth <= 0) Die();
     }
 

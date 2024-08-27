@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour
     void RegenerateArmor(){
         currentArmor += regenArmorRate;
         armorBar.SetArmor(currentArmor);
-        Debug.Log(currentArmor);
+        // Debug.Log(currentArmor);
          if (currentArmor > MaxArmor)
         {
             currentArmor = MaxArmor; 
@@ -217,7 +217,7 @@ public class PlayerController : MonoBehaviour
             healthbars.SetHealth(CurrentHealth);
         }
         lastDamageTime = Time.time;
-        Debug.Log(CurrentHealth);
+        // Debug.Log(CurrentHealth);
         if (CurrentHealth <= 0) Die();
     }
 

@@ -12,6 +12,8 @@ public class Equipments : ScriptableObject
     public float damage;
     public float movementSpeed;
     public float defence;
+    public int dropRate;
+    public GameObject prefab;
     [TextArea]public string description;
 
     public EquipmentTypes equipmentTypes = new EquipmentTypes();

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d796097e6bd3bf445a00c23fb12b0b3a, type: 3}
+  m_Name: Demon Lord's Ring
+  m_EditorClassIdentifier: 
+  itemName: Demon Lord's Ring
+  itemDescription: 
+  sprite: {fileID: 21300000, guid: 5e0bf8defeca07048b0dce70a3c08ee8, type: 3}
+  health: 30
+  armor: 10
+  moveSpeed: 1
+  damage: 30
+  defence: 0
+  dropRate: 10
+  prefab: {fileID: 0}
+  itemType: 2

@@ -7,8 +7,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Attack Magic Bullet", menuName = "Enemy Logic/Attack Logic/Attack Magic Bullet")]
 public class EnenyAttackMagicBullet : EnemyAttackSOBase
 {
-    // [SerializeField] public float bulletSpeed = 1f;
-    // [SerializeField] GameObject bulletPrefab;
     bool canAttack = true;
     public override void Initialize(GameObject gameObject, Enemy enemy)
     {
@@ -19,9 +17,11 @@ public class EnenyAttackMagicBullet : EnemyAttackSOBase
     public override void DoEnterLogic()
     {
         base.DoEnterLogic();
-        enemy.animator.SetTrigger("Attack");
-
-        // rb.velocity = direction * bulletSpeed;
+        if(canAttack){
+            enemy.animator.SetTrigger("Attack");
+            canAttack = false;
+            AttackCD();
+        }
     }
 
     public override void DoExitLogic()
@@ -38,24 +38,18 @@ public class EnenyAttackMagicBullet : EnemyAttackSOBase
         {
             enemy.StateMachine.ChangeState(enemy.GetHitState);
         }
+        if(canAttack){
+            enemy.animator.SetTrigger("Attack");
+            canAttack = false;
+            AttackCD();
+        }
 
         AnimatorStateInfo stateInfo = enemy.animator.GetCurrentAnimatorStateInfo(0);
-
-        if (stateInfo.normalizedTime >= 1.0f)
+        float normalizedTime = Mathf.Repeat(stateInfo.normalizedTime, 1f);
+        if (normalizedTime >= 0.9f)
         {
             enemy.StateMachine.ChangeState(enemy.IdleState);
         }
-        // if (canAttack)
-        // {
-        //     GameObject prefab = Instantiate(bulletPrefab, transform.position, transform.rotation);
-        //     canAttack = false;
-        //     Vector3 direction = (playerTransform.position - transform.position).normalized;
-        //     BulletEnemy bullet = prefab.GetComponent<BulletEnemy>();
-
-        //     bullet.RB.velocity = direction * bulletSpeed;
-        //     BulletTime(bullet);
-
-        // }
     }
 
     public override void DoPhysicUpdateLogic()
@@ -63,10 +57,11 @@ public class EnenyAttackMagicBullet : EnemyAttackSOBase
         base.DoPhysicUpdateLogic();
     }
 
-    // async void BulletTime(BulletEnemy bullet)
-    // {
-    //     await Task.Delay((int)(2f * 1000));
-    //     Destroy(bullet.gameObject);
-    //     canAttack = true;
-    // }
+    async void AttackCD(){
+        if (!canAttack)
+        {
+            await Task.Delay((int)(5f * 1000));
+            canAttack = true;
+        }
+    }
 }

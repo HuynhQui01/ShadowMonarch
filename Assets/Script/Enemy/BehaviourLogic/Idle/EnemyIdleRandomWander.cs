@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemyIdleRandomWander : EnemyIdelSOBase
 {
     [SerializeField] private float RandomMovementRange = 5f;
-    [SerializeField] private float RandomMovementSpeed = 0.5f;
+    [SerializeField] private float RandomMovementSpeed = 1f;
 
     Vector3 targetPos;
     Vector3 dir;
@@ -20,11 +20,12 @@ public class EnemyIdleRandomWander : EnemyIdelSOBase
         base.DoEnterLogic();
         targetPos = GetRandomPointInCircle();
         enemy.animator.SetBool("IsRun", true);
-
     }
 
     public override void DoExitLogic(){
         base.DoExitLogic();
+        enemy.animator.SetBool("IsRun", false);
+
     }
 
     public override void DoFrameUpdateLogic(){
@@ -34,6 +35,9 @@ public class EnemyIdleRandomWander : EnemyIdelSOBase
         }
         if(enemy.IsAggroed){
             enemy.StateMachine.ChangeState(enemy.MoveState);
+        }
+        if(enemy.IsWithinStrikingDistance){
+            enemy.StateMachine.ChangeState(enemy.AttackState);
         }
         
         dir = (targetPos - enemy.transform.position).normalized;

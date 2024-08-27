@@ -9,6 +9,7 @@ public class SkillManager : MonoBehaviour
     public CriticalSlash criticalSlash;
     public Rise rise;
     public ArmorRegenaration armorRegenaration;
+    public ShadowCover shadowCover;
     public SkilCDUI skilCDUI;
     public List<ISkill> allSkills = new List<ISkill>();
     public List<ISkill> skillsEquipped = new List<ISkill>();
@@ -16,12 +17,14 @@ public class SkillManager : MonoBehaviour
 
     void Awake()
     {
+        shadowCover = GetComponentInChildren<ShadowCover>();
     }
 
     void Start()
     {
         AddSkill();
         SetCDUI();
+        UsePassiveSkills();
     }
 
     void AddSkill()
@@ -30,6 +33,8 @@ public class SkillManager : MonoBehaviour
         allSkills.Add(criticalSlash);
         allSkills.Add(rise);
         allSkills.Add(armorRegenaration);
+        allSkills.Add(shadowCover);
+
         for (int i = 0; i < allSkills.Count; i++)
         {
             if (allSkills[i].IsEquipped)
@@ -40,6 +45,14 @@ public class SkillManager : MonoBehaviour
             }
         }
        
+    }
+
+    void UsePassiveSkills(){
+        foreach(var skill in skillsEquipped){
+            if(!skill.IsActiveSkill){
+                skill.Active();
+            }
+        }
     }
 
     void Update()

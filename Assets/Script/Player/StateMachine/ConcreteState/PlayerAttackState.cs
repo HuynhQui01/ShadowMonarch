@@ -30,13 +30,14 @@ public class PlayerAttackState : PlayerState
         base.FrameUpdate();
 
         AnimatorStateInfo info = player.animator.GetCurrentAnimatorStateInfo(0);
-        Debug.Log(info.normalizedTime);
         if (player.playerAction.Combat.Attack.IsInProgress())
         {
             player.animator.SetBool("KeepingAttack", true);
         }
         if (!player.playerAction.Combat.Attack.IsPressed() || !player.playerAction.Combat.Attack.IsInProgress())
         {
+            player.animator.SetBool("KeepingAttack", false);
+
             if (info.normalizedTime >= 0.9f)
             {
                 WaitAnimationEnd();
@@ -67,8 +68,7 @@ public class PlayerAttackState : PlayerState
 
     async void WaitAnimationEnd()
     {
-        player.animator.SetBool("KeepingAttack", false);
-        await Task.Delay((int)(0.3f * 1000));
+        await Task.Delay((int)(0.18f * 1000));
         playerStateMachine.ChangeState(player.playerIdleState);
     }
 }

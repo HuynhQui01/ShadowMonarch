@@ -11,15 +11,15 @@ public class EnemyAttackWithWeapon : EnemyAttackSOBase
     {
         base.Initialize(gameObject, enemy);
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-
+        
     }
 
     public override void DoEnterLogic()
     {
         base.DoEnterLogic();
+
         if (canAttack)
         {
-
             enemy.MoveEnemy(Vector2.zero);
             enemy.animator.SetTrigger("Attack");
             canAttack = false;
@@ -41,13 +41,13 @@ public class EnemyAttackWithWeapon : EnemyAttackSOBase
         }
 
         AnimatorStateInfo stateInfo = enemy.animator.GetCurrentAnimatorStateInfo(0);
-
-        while (stateInfo.normalizedTime <= 0.5f)
+        Debug.Log(stateInfo.normalizedTime);
+        if (stateInfo.normalizedTime <= 0.5f)
         {
             enemy.MoveEnemy(Vector2.zero);
         }
 
-        if (stateInfo.normalizedTime >= 0.5f)
+        if (stateInfo.normalizedTime >= 1f)
         {
             enemy.StateMachine.ChangeState(enemy.IdleState);
         }

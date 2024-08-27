@@ -5,27 +5,29 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCheckable
 {
-    [field: SerializeField] public float MaxHealth { get; set;} = 100f;
+    [field: SerializeField] public float MaxHealth { get; set; } = 100f;
     [field: SerializeField] public AttackHitBoxCheck Hitbox;
-    public float CurrentHealth { get; set;}
-    public Rigidbody2D RB { get; set;}
-    public bool IsFacingRight { get; set;} = true;
-    public EnemyStateMachine StateMachine {get; set;}
-    public EnemyAttackState AttackState {get; set;}
-    public EnemyIdleState IdleState {get; set;}
-    public EnemyMoveState MoveState {get; set;}
-    public EnemyGetHitState GetHitState {get; set;}
-    public EnemyDeadState DeadState {get; set;}
+    public float CurrentHealth { get; set; }
+    public Rigidbody2D RB { get; set; }
+    public bool IsFacingRight { get; set; } = true;
+    public EnemyStateMachine StateMachine { get; set; }
+    public EnemyAttackState AttackState { get; set; }
+    public EnemyIdleState IdleState { get; set; }
+    public EnemyMoveState MoveState { get; set; }
+    public EnemyGetHitState GetHitState { get; set; }
+    public EnemyDeadState DeadState { get; set; }
 
     [SerializeField] private EnemyIdelSOBase EnemyIdelBase;
     [SerializeField] private EnemyMoveSOBase EnemyMoveBase;
     [SerializeField] private EnemyAttackSOBase EnemyAttackBase;
-    public EnemyIdelSOBase EnemyIdleBaseInstance{get; set;}
-    public EnemyMoveSOBase EnemyMoveBaseInstance{get; set;}
-    public EnemyAttackSOBase EnemyAttackBaseInstance{get; set;}
+    public EnemyIdelSOBase EnemyIdleBaseInstance { get; set; }
+    public EnemyMoveSOBase EnemyMoveBaseInstance { get; set; }
+    public EnemyAttackSOBase EnemyAttackBaseInstance { get; set; }
 
     public bool IsAggroed { get; set; }
     public bool IsWithinStrikingDistance { get; set; }
+
+    public ItemDrop itemDrop;
 
     public Animator animator;
     public bool takeHit = false;
@@ -34,9 +36,12 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
     public HitEffect hitEffect;
     public bool isDead = false;
     public GameObject prefab;
+    public HealthText healthTextPrefab;
+    public SpriteRenderer spriteRenderer;
 
 
-    void Awake(){
+    void Awake()
+    {
         EnemyIdleBaseInstance = Instantiate(EnemyIdelBase);
         EnemyMoveBaseInstance = Instantiate(EnemyMoveBase);
         EnemyAttackBaseInstance = Instantiate(EnemyAttackBase);
@@ -51,7 +56,8 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
 
     }
 
-    void Start(){
+    void Start()
+    {
         CurrentHealth = MaxHealth;
         RB = GetComponent<Rigidbody2D>();
         EnemyIdleBaseInstance.Initialize(gameObject, this);
@@ -60,13 +66,16 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
         animator = GetComponent<Animator>();
         StateMachine.Initialize(IdleState);
         Hitbox = GetComponent<AttackHitBoxCheck>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void Update(){
+    void Update()
+    {
         StateMachine.CurrentEnemyState.FrameUpdate();
     }
 
-    void FixedUpdate(){
+    void FixedUpdate()
+    {
         StateMachine.CurrentEnemyState.PhysicsUpdate();
     }
 
@@ -74,16 +83,26 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
     {
         CurrentHealth -= damageAmout;
         takeHit = true;
-        Debug.Log("hit");
-        if(CurrentHealth <= 0){
+        // Debug.Log("hit");
+        healthTextPrefab.SetText(damageAmout);
+        RectTransform text = Instantiate(healthTextPrefab).GetComponent<RectTransform>();
+        text.transform.position = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+        Canvas canvas =  GameObject.FindAnyObjectByType<Canvas>();
+        text.SetParent(canvas.transform);
+        if (CurrentHealth <= 0)
+        {
             StateMachine.ChangeState(DeadState);
         }
     }
 
     public void Die()
     {
+        itemDrop.CalculateDropEquipment(transform);
+
         // Destroy(gameObject);
         isDead = true;
+        spriteRenderer.enabled = false;
+        isTarget.SetActive(false);
         StartCoroutine(DestroyEnemy());
     }
     IEnumerator DestroyEnemy()
@@ -100,11 +119,14 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
 
     public void CheckForLeftOrRightFacing(Vector2 velocity)
     {
-        if(!IsFacingRight && velocity.x< 0f){
+        if (!IsFacingRight && velocity.x < 0f)
+        {
             Vector3 rotator = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
             transform.rotation = Quaternion.Euler(rotator);
             IsFacingRight = !IsFacingRight;
-        }else if(IsFacingRight && velocity.x > 0f){
+        }
+        else if (IsFacingRight && velocity.x > 0f)
+        {
             Vector3 rotator = new Vector3(transform.rotation.x, 180f, transform.rotation.z);
             transform.rotation = Quaternion.Euler(rotator);
             IsFacingRight = !IsFacingRight;

@@ -15,6 +15,7 @@ public class EnemyMoveDirectToPlayer : EnemyMoveSOBase
     public override void DoEnterLogic()
     {
         base.DoEnterLogic();
+        enemy.animator.SetBool("IsRun", true);
     }
 
     public override void DoExitLogic()

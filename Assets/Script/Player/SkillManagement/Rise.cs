@@ -11,6 +11,10 @@ public class Rise : MonoBehaviour, ISkill
     public bool IsUnlocked { get; set; } = false;
     public bool IsEquipped { get; set; } = true;
     [field: SerializeField] public Sprite sprite { get; set; }
+    public float Defence { get; set; }
+    public float MoveSpeed { get; set; }
+    public bool IsActiveSkill {get; set; } = true;
+
 
     public TargetArea targetArea;
     public Animator animator;

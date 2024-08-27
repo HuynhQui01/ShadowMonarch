@@ -10,4 +10,8 @@ public class Portal : MonoBehaviour
             ScenceController.Instance.LoadScene(portalName.portalName);
         }
     }
+
+    public void LoadGame(){
+        ScenceController.Instance.LoadScene(portalName.portalName);
+    }
 }

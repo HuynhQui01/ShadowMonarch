@@ -46,7 +46,7 @@ public class VampireMove : EnemyMoveSOBase
                 canMove = false;
                 MoveCD();
             }
-            Debug.Log(normalizedTime);
+            // Debug.Log(normalizedTime);
         }
         if (enemy.IsWithinStrikingDistance)
         {

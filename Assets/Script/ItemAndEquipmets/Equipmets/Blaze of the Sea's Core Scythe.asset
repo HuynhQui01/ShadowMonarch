@@ -18,6 +18,8 @@ MonoBehaviour:
   damage: 20
   movementSpeed: 0
   defence: 0
+  dropRate: 50
+  prefab: {fileID: 8661490425660246988, guid: 93e4d513ed4f3b7488d77924c7094179, type: 3}
   description: 'Attack: 20
 
 '

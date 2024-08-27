@@ -17,6 +17,12 @@ public class ThePowerOfTheMonarch : MonoBehaviour, ISkill
     public bool IsCD { get; set; }
     public bool IsUnlocked { get; set; } = false;
     public bool IsEquipped { get; set; } = true;
+    public float Defence { get; set; }
+    public float MoveSpeed { get; set; }
+
+    public bool IsActiveSkill {get; set; } = true;
+
+
     public float curDamge;
 
 

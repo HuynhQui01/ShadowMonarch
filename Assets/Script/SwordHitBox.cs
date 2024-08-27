@@ -55,7 +55,7 @@ public class SwordHitBox : MonoBehaviour
                 Vector2 knockBack = direction * knockBackForce;
             Enemy enemy = col.gameObject.GetComponent<Enemy>();
             enemy.Damage(player.Damage + damage);
-            Debug.Log(enemy.CurrentHealth);
+            // Debug.Log(enemy.CurrentHealth);
         }
     }
 
