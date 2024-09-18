@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
 
@@ -22,6 +23,8 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
     public Rigidbody2D RB { get; set; }
     public bool IsFacingRight { get; set; } = true;
     [field: SerializeField] public int coin { get; set; }
+    [SerializeField] public int SoulPoints { get; set; }
+
 
     public PlayerStateMachine playerStateMachine { get; set; }
     public PlayerAttackState playerAttackState { get; set; }
@@ -57,8 +60,10 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
     public TargetArea targetArea;
     public SkillUIPanel SkillUIPanel;
     public HealthText healthTextPrefab;
-    
+
     public bool canMove = true;
+    public Slider soulBar;
+
 
 
 
@@ -111,7 +116,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
         lastDamageTime = -damageCooldown;
         CurrentHealth = MaxHealth;
         CurrentArmor = MaxArmor;
-
+        soulBar.maxValue = 100;
         // Debug.Log(MaxHealth);
     }
 
@@ -219,6 +224,10 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
             RegenerateArmor();
             lastRegenTime = Time.time;
         }
+        if (soulBar != null)
+        {
+            soulBar.value = SoulPoints;
+        }
     }
 
     void LevelUp()
@@ -236,7 +245,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
 
     public void RegenerateArmor()
     {
-        
+
         CurrentArmor += regenArmorRate;
         armorBar.SetArmor(CurrentArmor);
         // Debug.Log(CurrentArmor);
@@ -277,7 +286,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
         healthTextPrefab.SetText(damageAmout);
         RectTransform text = Instantiate(healthTextPrefab).GetComponent<RectTransform>();
         text.transform.position = Camera.main.WorldToScreenPoint(gameObject.transform.position);
-        Canvas canvas =  GameObject.FindAnyObjectByType<Canvas>();
+        Canvas canvas = GameObject.FindAnyObjectByType<Canvas>();
         text.SetParent(canvas.transform);
         if (CurrentArmor > 0)
         {
@@ -332,6 +341,14 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
 
             // score = data.score;
             Debug.Log("Game Loaded");
+        }
+    }
+    public void SetSoulPoint()
+    {
+        SoulPoints += 5;
+        if (SoulPoints == 100)
+        {
+            SoulPoints = 100;
         }
     }
 

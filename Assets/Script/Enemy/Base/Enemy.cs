@@ -81,17 +81,20 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
 
     public void Damage(float damageAmout)
     {
-        CurrentHealth -= damageAmout;
-        takeHit = true;
-        // Debug.Log("hit");
-        healthTextPrefab.SetText(damageAmout);
-        RectTransform text = Instantiate(healthTextPrefab).GetComponent<RectTransform>();
-        text.transform.position = Camera.main.WorldToScreenPoint(gameObject.transform.position);
-        Canvas canvas =  GameObject.FindAnyObjectByType<Canvas>();
-        text.SetParent(canvas.transform);
-        if (CurrentHealth <= 0)
+        if (!isDead)
         {
-            StateMachine.ChangeState(DeadState);
+            CurrentHealth -= damageAmout;
+            takeHit = true;
+            // Debug.Log("hit");
+            healthTextPrefab.SetText(damageAmout);
+            RectTransform text = Instantiate(healthTextPrefab).GetComponent<RectTransform>();
+            text.transform.position = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+            Canvas canvas = GameObject.FindAnyObjectByType<Canvas>();
+            text.SetParent(canvas.transform);
+            if (CurrentHealth <= 0)
+            {
+                StateMachine.ChangeState(DeadState);
+            }
         }
     }
 

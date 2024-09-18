@@ -13,8 +13,10 @@ public class EnemyDeadState : EnemyState
     public override void EnterState()
     {
         base.EnterState();
+        enemy.isDead = true;
         enemy.animator.SetBool("IsDead", true);
         enemy.player.Experience += experience;
+        enemy.player.SetSoulPoint();
         
     }
 
