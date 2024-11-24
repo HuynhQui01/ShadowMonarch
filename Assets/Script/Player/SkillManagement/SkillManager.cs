@@ -10,6 +10,7 @@ public class SkillManager : MonoBehaviour
     public Rise rise;
     public ArmorRegenaration armorRegenaration;
     public ShadowCover shadowCover;
+    public Evolve evolve;
     public SkilCDUI skilCDUI;
     public List<ISkill> allSkills = new List<ISkill>();
     public List<ISkill> skillsEquipped = new List<ISkill>();
@@ -18,13 +19,14 @@ public class SkillManager : MonoBehaviour
     void Awake()
     {
         shadowCover = GetComponentInChildren<ShadowCover>();
+        evolve = GetComponentInChildren<Evolve>();
     }
 
     void Start()
     {
         AddSkill();
         SetCDUI();
-        UsePassiveSkills();
+        // UsePassiveSkills();
     }
 
     void AddSkill()
@@ -34,26 +36,47 @@ public class SkillManager : MonoBehaviour
         allSkills.Add(rise);
         allSkills.Add(armorRegenaration);
         allSkills.Add(shadowCover);
+        allSkills.Add(evolve);
 
+        // for (int i = 0; i < allSkills.Count; i++)
+        // {
+        //     if (allSkills[i].IsEquipped)
+        //     {
+        //         skillsEquipped.Add(allSkills[i]);
+        //         Image image = skilCDUI.sliders[i].GetComponentInChildren<Image>();
+        //         image.sprite = allSkills[i].sprite;
+        //     }
+        // }
         for (int i = 0; i < allSkills.Count; i++)
         {
             if (allSkills[i].IsEquipped)
             {
                 skillsEquipped.Add(allSkills[i]);
-                Image image = skilCDUI.sliders[i].GetComponentInChildren<Image>();
-                image.sprite = allSkills[i].sprite;
+
+                if (i < skilCDUI.sliders.Count)
+                {
+                    Image image = skilCDUI.sliders[i].GetComponentInChildren<Image>();
+                    image.sprite = allSkills[i].sprite;
+                }
+                else
+                {
+                    Debug.LogWarning("Not enough sliders in skilCDUI to match the number of equipped skills.");
+                }
             }
+
         }
-       
     }
 
-    void UsePassiveSkills(){
-        foreach(var skill in skillsEquipped){
-            if(!skill.IsActiveSkill){
-                skill.Active();
-            }
-        }
-    }
+    // void UsePassiveSkills()
+    // {
+    //     foreach (var skill in skillsEquipped)
+    //     {
+    //         if (!skill.IsActiveSkill)
+    //         {
+    //             skill.Active();
+    //         }
+    //     }
+    // }
 
     void Update()
     {
@@ -82,8 +105,8 @@ public class SkillManager : MonoBehaviour
             skilCDUI.sliders[1].value += Time.deltaTime;
             if (skilCDUI.sliders[1].value >= skilCDUI.sliders[1].maxValue)
             {
-                skillsEquipped[1].IsCD = false; 
-                skilCDUI.sliders[1].value = 0; 
+                skillsEquipped[1].IsCD = false;
+                skilCDUI.sliders[1].value = 0;
             }
         }
     }
@@ -95,8 +118,8 @@ public class SkillManager : MonoBehaviour
             skilCDUI.sliders[2].value += Time.deltaTime;
             if (skilCDUI.sliders[2].value >= skilCDUI.sliders[2].maxValue)
             {
-                skillsEquipped[2].IsCD = false; 
-                skilCDUI.sliders[2].value = 0; 
+                skillsEquipped[2].IsCD = false;
+                skilCDUI.sliders[2].value = 0;
             }
         }
     }
@@ -120,5 +143,6 @@ public class SkillManager : MonoBehaviour
             skilCDUI.sliders[2].maxValue = skillsEquipped[2].CD;
             skilCDUI.sliders[2].value = 0;
         }
+
     }
 }

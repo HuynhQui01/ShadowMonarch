@@ -25,6 +25,7 @@ public class SkillUIPanel : MonoBehaviour
         activeSkills[2].image.sprite = skillManager.rise.sprite;
         passiveSkills[0].image.sprite = skillManager.armorRegenaration.sprite;
         jobSkills[0].image.sprite = skillManager.shadowCover.sprite;
+        jobSkills[1].image.sprite = skillManager.evolve.sprite;
     }
 
     public void OnLeftClick(ActiveSkills activeSkill)

@@ -20,6 +20,7 @@ public class EnemyIdleRandomWander : EnemyIdelSOBase
         base.DoEnterLogic();
         targetPos = GetRandomPointInCircle();
         enemy.animator.SetBool("IsRun", true);
+        Debug.Log("Idel");
     }
 
     public override void DoExitLogic(){
@@ -35,9 +36,6 @@ public class EnemyIdleRandomWander : EnemyIdelSOBase
         }
         if(enemy.IsAggroed){
             enemy.StateMachine.ChangeState(enemy.MoveState);
-        }
-        if(enemy.IsWithinStrikingDistance){
-            enemy.StateMachine.ChangeState(enemy.AttackState);
         }
         
         dir = (targetPos - enemy.transform.position).normalized;

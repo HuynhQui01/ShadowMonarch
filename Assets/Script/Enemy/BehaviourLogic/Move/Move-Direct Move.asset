@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089cb0d3f8f7fde44ba103683f33244b, type: 3}
   m_Name: Move-Direct Move
   m_EditorClassIdentifier: 
-  movementSpeed: 0.5
+  movementSpeed: 1.5

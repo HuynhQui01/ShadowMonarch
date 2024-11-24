@@ -40,7 +40,7 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
     public SpriteRenderer spriteRenderer;
 
 
-    void Awake()
+    public void Awake()
     {
         EnemyIdleBaseInstance = Instantiate(EnemyIdelBase);
         EnemyMoveBaseInstance = Instantiate(EnemyMoveBase);
@@ -53,7 +53,6 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
         GetHitState = new EnemyGetHitState(this, StateMachine);
         DeadState = new EnemyDeadState(this, StateMachine);
         player = FindObjectOfType<Player>();
-
     }
 
     void Start()
@@ -68,7 +67,6 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
         Hitbox = GetComponent<AttackHitBoxCheck>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-
     void Update()
     {
         StateMachine.CurrentEnemyState.FrameUpdate();
@@ -79,13 +77,12 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
         StateMachine.CurrentEnemyState.PhysicsUpdate();
     }
 
-    public void Damage(float damageAmout)
+    public virtual void Damage(float damageAmout)
     {
         if (!isDead)
         {
             CurrentHealth -= damageAmout;
             takeHit = true;
-            // Debug.Log("hit");
             healthTextPrefab.SetText(damageAmout);
             RectTransform text = Instantiate(healthTextPrefab).GetComponent<RectTransform>();
             text.transform.position = Camera.main.WorldToScreenPoint(gameObject.transform.position);
@@ -98,11 +95,11 @@ public class Enemy : MonoBehaviour, IEnemyDamageable, IEnemyMoveable, ITriggerCh
         }
     }
 
-    public void Die()
+    public virtual void Die()
     {
         itemDrop.CalculateDropEquipment(transform);
 
-        // Destroy(gameObject);
+        Destroy(gameObject);
         isDead = true;
         spriteRenderer.enabled = false;
         isTarget.SetActive(false);

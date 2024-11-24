@@ -7,14 +7,7 @@ using UnityEngine.UI;
 
 public class AsyncLoader : MonoBehaviour
 {
-
-    [SerializeField] private GameObject loadingScene;
-    [SerializeField] private GameObject mainMenu;
-
-    [SerializeField] private Slider loadingSlider;
-
     GameObject loadingSceneObject;
-
     Player player;
     public CinemachineVirtualCamera cinemachineVirtualCamera;
 
@@ -26,8 +19,6 @@ public class AsyncLoader : MonoBehaviour
 
     public void LoadSceneBtn(string sceneName)
     {
-        mainMenu.SetActive(false);
-        loadingScene.SetActive(true);
         StartCoroutine(LoadLevelAsync(sceneName));
 
     }
@@ -37,8 +28,6 @@ public class AsyncLoader : MonoBehaviour
         AsyncOperation loadOperation = SceneManager.LoadSceneAsync(sceneName);
         while (!loadOperation.isDone)
         {
-            float progressValue = Mathf.Clamp01(loadOperation.progress / 0.9f);
-            loadingSlider.value = loadOperation.progress;
             yield return null;
         }
 

@@ -53,11 +53,17 @@ public class PlayerAttackState : PlayerState
         }
         if (player.playerAction.Combat.Skill2.IsPressed())
         {
+            player.playerStateMachine.ChangeState(player.playerUseSkillState);
 
         }
         if (player.playerAction.Combat.SpecialSkill.IsPressed())
         {
+            player.playerStateMachine.ChangeState(player.playerUseSkillState);
 
+        }
+        if (player.playerAction.Evolve.Evolve.IsPressed())
+        {
+            player.playerStateMachine.ChangeState(player.playerUseSkillState);
         }
     }
 

@@ -60,6 +60,10 @@ public class PlayerMoveState : PlayerState
         {
             player.playerStateMachine.ChangeState(player.playerUseSkillState);
         }
+        if (player.playerAction.Evolve.Evolve.IsPressed())
+        {
+            player.playerStateMachine.ChangeState(player.playerUseSkillState);
+        }
     }
 
     public override void PhysicsUpdate()

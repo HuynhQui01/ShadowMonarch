@@ -99,6 +99,6 @@ public class NonequipmentSlot : MonoBehaviour, IPointerClickHandler
     }
     public void OnRightClick()
     {
-
+        
     }
 }

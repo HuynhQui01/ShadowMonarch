@@ -355,6 +355,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Evolve",
+            "id": "ba3924f5-4e2d-42d5-8e77-822312869730",
+            "actions": [
+                {
+                    "name": "Evolve",
+                    "type": "Button",
+                    "id": "26439597-6b8d-449b-9a94-eac043af14f0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "37abc795-669e-42c9-b587-3f09ee088294",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Evolve",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

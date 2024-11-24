@@ -12,48 +12,56 @@ public class PlayerUseSkillState : PlayerState
     public override void EnterState()
     {
         base.EnterState();
-        if (player.playerAction.Combat.Skill1.IsPressed())
+        if (player.canUseSkill)
         {
-            if (!player.skillManager.skillsEquipped[0].IsCD)
+            if (player.playerAction.Evolve.Evolve.IsPressed())
             {
-                player.skillManager.skillsEquipped[0].Active();
-                WaitForCDSkill1();
-            }
-            else
-            {
+                player.skillManager.evolve.Active();
                 player.playerStateMachine.ChangeState(player.playerIdleState);
+            }
+            if (player.playerAction.Combat.Skill1.IsPressed())
+            {
+                if (!player.skillManager.skillsEquipped[0].IsCD)
+                {
+                    player.skillManager.skillsEquipped[0].Active();
+                    WaitForCDSkill1();
+                }
+                else
+                {
+                    player.playerStateMachine.ChangeState(player.playerIdleState);
+
+                }
+            }
+            if (player.playerAction.Combat.Skill2.IsPressed())
+            {
+                if (!player.skillManager.skillsEquipped[1].IsCD)
+                {
+                    player.skillManager.skillsEquipped[1].Active();
+
+                    WaitForCDSkill2();
+                }
+                else
+                {
+                    player.playerStateMachine.ChangeState(player.playerIdleState);
+
+                }
+            }
+            if (player.playerAction.Combat.SpecialSkill.IsPressed())
+            {
+                if (!player.skillManager.skillsEquipped[2].IsCD)
+                {
+                    player.skillManager.skillsEquipped[2].Active();
+                    WaitForCDSpecialSkill();
+
+                }
+                else
+                {
+                    player.playerStateMachine.ChangeState(player.playerIdleState);
+                }
 
             }
         }
-        if (player.playerAction.Combat.Skill2.IsPressed())
-        {
-            if (!player.skillManager.skillsEquipped[1].IsCD)
-            {
-                player.skillManager.skillsEquipped[1].Active();
 
-                WaitForCDSkill2();
-            }
-            else
-            {
-                player.playerStateMachine.ChangeState(player.playerIdleState);
-
-            }
-        }
-        if (player.playerAction.Combat.SpecialSkill.IsPressed())
-        {
-            if (!player.skillManager.skillsEquipped[2].IsCD)
-            {
-                player.skillManager.skillsEquipped[2].Active();
-                WaitForCDSpecialSkill();
-
-            }
-            else
-            {
-                player.playerStateMachine.ChangeState(player.playerIdleState);
-
-            }
-
-        }
     }
 
     public override void ExitState()

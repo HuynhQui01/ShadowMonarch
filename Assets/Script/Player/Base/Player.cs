@@ -13,9 +13,9 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
     public float CurrentHealth { get; set; }
     [field: SerializeField] public float MaxArmor { get; set; } = 50f;
     public float CurrentArmor { get; set; }
-    [field: SerializeField] public float Damage { get; set; }
+    [field: SerializeField] public float Damage { get; set; } = 10f;
     [field: SerializeField] public float MoveSpeed { get; set; } = 2f;
-    [field: SerializeField] public float Defence { get; set; }
+    [field: SerializeField] public float Defence { get; set; } = 20f;
     [field: SerializeField] public float Experience { get; set; }
     [field: SerializeField] public int Level { get; set; }
     [field: SerializeField] public float MaxExperience { get; set; } = 5f;
@@ -23,7 +23,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
     public Rigidbody2D RB { get; set; }
     public bool IsFacingRight { get; set; } = true;
     [field: SerializeField] public int coin { get; set; }
-    [SerializeField] public int SoulPoints { get; set; }
+    [SerializeField] public float SoulPoints { get; set; } = 100;
 
 
     public PlayerStateMachine playerStateMachine { get; set; }
@@ -62,6 +62,8 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
     public HealthText healthTextPrefab;
 
     public bool canMove = true;
+    public bool canUseSkill = true;
+    public bool canOpenInventory = true;
     public Slider soulBar;
 
 
@@ -78,6 +80,7 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
         {
             Destroy(gameObject);
         }
+
         playerStateMachine = new PlayerStateMachine();
         playerAttackState = new PlayerAttackState(this, playerStateMachine);
         playerMovementState = new PlayerMoveState(this, playerStateMachine);
@@ -139,12 +142,13 @@ public class Player : MonoBehaviour, IPlayerDamageable, IPlayerMoveable
         inventoryManager.OpenAndCloseInventory();
         Attribute();
         EquipItem();
-
     }
 
     public void Attribute()
     {
-        ResetAttribute();
+        MaxHealth = 100f;
+        Damage = 10f;
+        Defence = 20f;
         for (int i = 0; i < inventoryManager.equipmentSlots.Length; i++)
         {
             if (inventoryManager.equipmentSlots[i].isFull == true)

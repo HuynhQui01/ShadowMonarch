@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <MaxHealth>k__BackingField: 100
-  Hitbox: {fileID: 0}
+  Hitbox: {fileID: 7502929898893126836}
   EnemyIdelBase: {fileID: 11400000, guid: c0e652a142318cc4dbe10abfdcce1377, type: 2}
   EnemyMoveBase: {fileID: 11400000, guid: 0e043a37e8b91fe4fa244cbbda3e8bd4, type: 2}
   EnemyAttackBase: {fileID: 11400000, guid: 6efdd44c9ed4f1d48ac884da767407e6, type: 2}

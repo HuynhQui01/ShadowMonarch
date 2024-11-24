@@ -1,0 +1,475 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Earthquake
+  serializedVersion: 7
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves:
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.6
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2.6
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2.8
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: TriggerAreas/Attackbox/EarthquakeEffect
+    classID: 1
+    script: {fileID: 0}
+    flags: 16
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2.5
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2.8
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: TriggerAreas/Attackbox
+    classID: 58
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.2
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.6
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2.8
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: TriggerAreas/Attackbox/WarningArea
+    classID: 1
+    script: {fileID: 0}
+    flags: 16
+  m_PPtrCurves:
+  - serializedVersion: 2
+    curve:
+    - time: 0
+      value: {fileID: 21300000, guid: bd21980a8eb0fa842bfa799796d82eb0, type: 3}
+    - time: 0.1
+      value: {fileID: 21300000, guid: a7bdaafb380cd8f46b7c0d8e5e8f0708, type: 3}
+    - time: 0.2
+      value: {fileID: 21300000, guid: 0f387662d4a78cf41838e64641598004, type: 3}
+    - time: 0.3
+      value: {fileID: 21300000, guid: b6fe1aa2b8bc848478b7b2ba4bb1ee67, type: 3}
+    - time: 0.4
+      value: {fileID: 21300000, guid: 901e4e501497b414787f5020fee02baf, type: 3}
+    - time: 0.5
+      value: {fileID: 21300000, guid: 5b19495ba08c2cc4596c4f9a7b42c709, type: 3}
+    - time: 0.6
+      value: {fileID: 21300000, guid: eae79c14434e97a47a8203bb0a218655, type: 3}
+    - time: 0.7
+      value: {fileID: 21300000, guid: 08f62a9a189a3fa4bab66353b1dc1eed, type: 3}
+    - time: 0.8
+      value: {fileID: 21300000, guid: 77a56e07cb23f1045b76963ad907c9fa, type: 3}
+    - time: 0.9
+      value: {fileID: 21300000, guid: c27c8ce7b1a00ab4eb000bddca08882c, type: 3}
+    - time: 1
+      value: {fileID: 21300000, guid: bce06dc6d321f7e45b9facb4f6077c1a, type: 3}
+    - time: 1.1
+      value: {fileID: 21300000, guid: b6c0230b7345f1442aa1079d9b8ab260, type: 3}
+    - time: 1.2
+      value: {fileID: 21300000, guid: 67919725dd816fd4ea87665493bac7bd, type: 3}
+    - time: 1.3
+      value: {fileID: 21300000, guid: b9fbf2e5ee817b441b7e241b9cbf1166, type: 3}
+    - time: 1.4
+      value: {fileID: 21300000, guid: a13c6331f8511994b80f49b0c316dc40, type: 3}
+    - time: 1.5
+      value: {fileID: 21300000, guid: 0a5af62b9dccf0c43a9c1619a6739d72, type: 3}
+    - time: 1.6
+      value: {fileID: 21300000, guid: 4b2d4e8588354ce4fa2b258cfe280654, type: 3}
+    - time: 1.7
+      value: {fileID: 21300000, guid: 8f04f5cb223d21748b2c19ff5fc69a05, type: 3}
+    - time: 1.8
+      value: {fileID: 21300000, guid: 88eb3b86e9a60b84a8b68bc6bb4362da, type: 3}
+    - time: 1.9
+      value: {fileID: 21300000, guid: 311c06cb8a42572429de7659dee22c38, type: 3}
+    - time: 2
+      value: {fileID: 21300000, guid: 1491ac73632b0c74c8ee2a79c1be29bf, type: 3}
+    - time: 2.1
+      value: {fileID: 21300000, guid: 94c31957d26a27a4aaeac71232990da3, type: 3}
+    - time: 2.2
+      value: {fileID: 21300000, guid: a5358dc6704c8704ebbaae3e3e069134, type: 3}
+    - time: 2.3
+      value: {fileID: 21300000, guid: a5dcf00fc63633d4aa4074bc8ddee4c6, type: 3}
+    - time: 2.4
+      value: {fileID: 21300000, guid: b51b5985fcc6fdc46ab9094d191c3cb8, type: 3}
+    - time: 2.5
+      value: {fileID: 21300000, guid: 4e6039ed4b216c34d9b8836f1520dc8d, type: 3}
+    - time: 2.6
+      value: {fileID: 21300000, guid: 1d54168a2fd82cf41b34c9c0e428b283, type: 3}
+    - time: 2.7
+      value: {fileID: 21300000, guid: 2606f50717b92104a9a22e4c2b4fb31a, type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+    flags: 2
+  m_SampleRate: 10
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - serializedVersion: 2
+      path: 2203455841
+      attribute: 2086281974
+      script: {fileID: 0}
+      typeID: 1
+      customType: 0
+      isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 2328325418
+      attribute: 3305885265
+      script: {fileID: 0}
+      typeID: 58
+      customType: 0
+      isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 882543217
+      attribute: 2086281974
+      script: {fileID: 0}
+      typeID: 1
+      customType: 0
+      isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    pptrCurveMapping:
+    - {fileID: 21300000, guid: bd21980a8eb0fa842bfa799796d82eb0, type: 3}
+    - {fileID: 21300000, guid: a7bdaafb380cd8f46b7c0d8e5e8f0708, type: 3}
+    - {fileID: 21300000, guid: 0f387662d4a78cf41838e64641598004, type: 3}
+    - {fileID: 21300000, guid: b6fe1aa2b8bc848478b7b2ba4bb1ee67, type: 3}
+    - {fileID: 21300000, guid: 901e4e501497b414787f5020fee02baf, type: 3}
+    - {fileID: 21300000, guid: 5b19495ba08c2cc4596c4f9a7b42c709, type: 3}
+    - {fileID: 21300000, guid: eae79c14434e97a47a8203bb0a218655, type: 3}
+    - {fileID: 21300000, guid: 08f62a9a189a3fa4bab66353b1dc1eed, type: 3}
+    - {fileID: 21300000, guid: 77a56e07cb23f1045b76963ad907c9fa, type: 3}
+    - {fileID: 21300000, guid: c27c8ce7b1a00ab4eb000bddca08882c, type: 3}
+    - {fileID: 21300000, guid: bce06dc6d321f7e45b9facb4f6077c1a, type: 3}
+    - {fileID: 21300000, guid: b6c0230b7345f1442aa1079d9b8ab260, type: 3}
+    - {fileID: 21300000, guid: 67919725dd816fd4ea87665493bac7bd, type: 3}
+    - {fileID: 21300000, guid: b9fbf2e5ee817b441b7e241b9cbf1166, type: 3}
+    - {fileID: 21300000, guid: a13c6331f8511994b80f49b0c316dc40, type: 3}
+    - {fileID: 21300000, guid: 0a5af62b9dccf0c43a9c1619a6739d72, type: 3}
+    - {fileID: 21300000, guid: 4b2d4e8588354ce4fa2b258cfe280654, type: 3}
+    - {fileID: 21300000, guid: 8f04f5cb223d21748b2c19ff5fc69a05, type: 3}
+    - {fileID: 21300000, guid: 88eb3b86e9a60b84a8b68bc6bb4362da, type: 3}
+    - {fileID: 21300000, guid: 311c06cb8a42572429de7659dee22c38, type: 3}
+    - {fileID: 21300000, guid: 1491ac73632b0c74c8ee2a79c1be29bf, type: 3}
+    - {fileID: 21300000, guid: 94c31957d26a27a4aaeac71232990da3, type: 3}
+    - {fileID: 21300000, guid: a5358dc6704c8704ebbaae3e3e069134, type: 3}
+    - {fileID: 21300000, guid: a5dcf00fc63633d4aa4074bc8ddee4c6, type: 3}
+    - {fileID: 21300000, guid: b51b5985fcc6fdc46ab9094d191c3cb8, type: 3}
+    - {fileID: 21300000, guid: 4e6039ed4b216c34d9b8836f1520dc8d, type: 3}
+    - {fileID: 21300000, guid: 1d54168a2fd82cf41b34c9c0e428b283, type: 3}
+    - {fileID: 21300000, guid: 2606f50717b92104a9a22e4c2b4fb31a, type: 3}
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 2.8
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.6
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2.6
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2.8
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: TriggerAreas/Attackbox/EarthquakeEffect
+    classID: 1
+    script: {fileID: 0}
+    flags: 16
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2.5
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2.8
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: TriggerAreas/Attackbox
+    classID: 58
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.2
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.6
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2.8
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: TriggerAreas/Attackbox/WarningArea
+    classID: 1
+    script: {fileID: 0}
+    flags: 16
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_Events:
+  - time: 1.1
+    functionName: EarthquakeAttack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

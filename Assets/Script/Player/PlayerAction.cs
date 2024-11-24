@@ -377,6 +377,34 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Evolve"",
+            ""id"": ""ba3924f5-4e2d-42d5-8e77-822312869730"",
+            ""actions"": [
+                {
+                    ""name"": ""Evolve"",
+                    ""type"": ""Button"",
+                    ""id"": ""26439597-6b8d-449b-9a94-eac043af14f0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""37abc795-669e-42c9-b587-3f09ee088294"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Evolve"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -404,6 +432,9 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
         m_SkillPanel = asset.FindActionMap("SkillPanel", throwIfNotFound: true);
         m_SkillPanel_OpenSkillPanel = m_SkillPanel.FindAction("OpenSkillPanel", throwIfNotFound: true);
         m_SkillPanel_CloseSkillPanel = m_SkillPanel.FindAction("CloseSkillPanel", throwIfNotFound: true);
+        // Evolve
+        m_Evolve = asset.FindActionMap("Evolve", throwIfNotFound: true);
+        m_Evolve_Evolve = m_Evolve.FindAction("Evolve", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -755,6 +786,52 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
         }
     }
     public SkillPanelActions @SkillPanel => new SkillPanelActions(this);
+
+    // Evolve
+    private readonly InputActionMap m_Evolve;
+    private List<IEvolveActions> m_EvolveActionsCallbackInterfaces = new List<IEvolveActions>();
+    private readonly InputAction m_Evolve_Evolve;
+    public struct EvolveActions
+    {
+        private @PlayerAction m_Wrapper;
+        public EvolveActions(@PlayerAction wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Evolve => m_Wrapper.m_Evolve_Evolve;
+        public InputActionMap Get() { return m_Wrapper.m_Evolve; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(EvolveActions set) { return set.Get(); }
+        public void AddCallbacks(IEvolveActions instance)
+        {
+            if (instance == null || m_Wrapper.m_EvolveActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_EvolveActionsCallbackInterfaces.Add(instance);
+            @Evolve.started += instance.OnEvolve;
+            @Evolve.performed += instance.OnEvolve;
+            @Evolve.canceled += instance.OnEvolve;
+        }
+
+        private void UnregisterCallbacks(IEvolveActions instance)
+        {
+            @Evolve.started -= instance.OnEvolve;
+            @Evolve.performed -= instance.OnEvolve;
+            @Evolve.canceled -= instance.OnEvolve;
+        }
+
+        public void RemoveCallbacks(IEvolveActions instance)
+        {
+            if (m_Wrapper.m_EvolveActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IEvolveActions instance)
+        {
+            foreach (var item in m_Wrapper.m_EvolveActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_EvolveActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public EvolveActions @Evolve => new EvolveActions(this);
     public interface IMovementActions
     {
         void OnMove(InputAction.CallbackContext context);
@@ -782,5 +859,9 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
     {
         void OnOpenSkillPanel(InputAction.CallbackContext context);
         void OnCloseSkillPanel(InputAction.CallbackContext context);
+    }
+    public interface IEvolveActions
+    {
+        void OnEvolve(InputAction.CallbackContext context);
     }
 }

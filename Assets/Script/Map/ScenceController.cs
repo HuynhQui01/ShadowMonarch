@@ -11,10 +11,8 @@ public class ScenceController : MonoBehaviour
     public CinemachineVirtualCamera cinemachineVirtualCamera;
     Player player;
 
-
     [SerializeField] private SkilCDUI iconPanel;
     [SerializeField] private GameObject loadingScene;
-    [SerializeField] private GameObject mainMenu;
 
     [SerializeField] private Slider loadingSlider;
 
@@ -119,52 +117,4 @@ public class ScenceController : MonoBehaviour
 
 
     }
-
-
-    // public void LoadSceneBtn(string sceneName)
-    // {
-    //     mainMenu.SetActive(false);
-    //     loadingScene.SetActive(true);
-    //     StartCoroutine(LoadLevelAsync(sceneName));
-
-    // }
-
-    // IEnumerator LoadLevelAsync(string sceneName)
-    // {
-
-    //     AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
-    //     asyncLoad.allowSceneActivation = false;
-
-    //     while (!asyncLoad.isDone)
-    //     {
-    //         Debug.Log($"Loading progress: {asyncLoad.progress}");
-
-    //         if (asyncLoad.progress >= 0.9f)
-    //         {
-    //             Debug.Log("Scene loaded. Activating scene...");
-    //             float progressValue = Mathf.Clamp01(asyncLoad.progress / 0.9f);
-    //             loadingSlider.value = asyncLoad.progress;
-
-    //             asyncLoad.allowSceneActivation = true;
-    //         }
-
-    //         player = FindObjectOfType<Player>();
-    //         player.transform.position = new Vector3(0, 0, 0);
-
-
-    //         cinemachineVirtualCamera = FindObjectOfType<CinemachineVirtualCamera>();
-    //         cinemachineVirtualCamera.Follow = player.transform;
-    //         loadingSlider = GameObject.Find("Slider").GetComponent<Slider>();
-    //         yield return null;
-    //     }
-    //     // AsyncOperation loadOperation = SceneManager.LoadSceneAsync(sceneName);
-    //     // while (!loadOperation.isDone)
-    //     // {
-    //     //     float progressValue = Mathf.Clamp01(loadOperation.progress / 0.9f);
-    //     //     loadingSlider.value = loadOperation.progress;
-    //     //     yield return null;
-    //     // }
-    // }
-
-
 }

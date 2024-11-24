@@ -9,15 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/BegingScene.unity
     guid: c89a858efa3f3e944bb7e5ba83bb4e5f
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/FrozenDungeon 1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/DarksideScene.unity
+    path: Assets/Scenes/DarksideScene 1.unity
     guid: f742207fe29edb04f907409dc988a434
   - enabled: 1
-    path: Assets/Scenes/DarksideScene 1.unity
+    path: Assets/Scenes/DarkJPDungeon 1.unity
     guid: c1f748f2027ecf4429ecc19eb3388582
   - enabled: 1
     path: Assets/Scenes/HomeBaseScene.unity
     guid: 74df5bedef6431c43a986f73162c3a19
+  - enabled: 1
+    path: Assets/Scenes/ChooseDungeon.unity
+    guid: 9e087af5940bcf74a9d5a68f7f739afd
   m_configObjects: {}

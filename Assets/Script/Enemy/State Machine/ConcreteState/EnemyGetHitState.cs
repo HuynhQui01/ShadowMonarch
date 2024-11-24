@@ -23,7 +23,9 @@ public class EnemyGetHitState : EnemyState
     public override void FrameUpdate()
     {
         base.FrameUpdate(); 
-        if (enemy.animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "GetHit"){
+        AnimatorStateInfo info = enemy.animator.GetCurrentAnimatorStateInfo(0);
+        if (info.normalizedTime >= 0.9){
+            enemy.takeHit = false;
             enemy.StateMachine.ChangeState(enemy.IdleState);
         }
 

@@ -41,7 +41,7 @@ public class EnemyAttackWithWeapon : EnemyAttackSOBase
         }
 
         AnimatorStateInfo stateInfo = enemy.animator.GetCurrentAnimatorStateInfo(0);
-        Debug.Log(stateInfo.normalizedTime);
+        // Debug.Log(stateInfo.normalizedTime);
         if (stateInfo.normalizedTime <= 0.5f)
         {
             enemy.MoveEnemy(Vector2.zero);

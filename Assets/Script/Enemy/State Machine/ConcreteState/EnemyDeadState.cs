@@ -8,6 +8,7 @@ public class EnemyDeadState : EnemyState
     public float experience = 5f;
     public EnemyDeadState(Enemy enemy, EnemyStateMachine enemyStateMachine) : base(enemy, enemyStateMachine)
     {
+        
     }
 
     public override void EnterState()

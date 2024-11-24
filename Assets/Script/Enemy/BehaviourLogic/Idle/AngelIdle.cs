@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AngelIdle : EnemyIdelSOBase
 {
-     [SerializeField] private float RandomMovementRange = 5f;
+    [SerializeField] private float RandomMovementRange = 5f;
     [SerializeField] private float RandomMovementSpeed = 0.5f;
 
     Vector3 targetPos;
@@ -16,37 +16,46 @@ public class AngelIdle : EnemyIdelSOBase
 
     }
 
-    public override void DoEnterLogic(){
+    public override void DoEnterLogic()
+    {
         base.DoEnterLogic();
         targetPos = GetRandomPointInCircle();
 
     }
 
-    public override void DoExitLogic(){
+    public override void DoExitLogic()
+    {
         base.DoExitLogic();
     }
 
-    public override void DoFrameUpdateLogic(){
+    public override void DoFrameUpdateLogic()
+    {
         base.DoFrameUpdateLogic();
-        if(enemy.takeHit){
+        if (enemy.takeHit)
+        {
             enemy.StateMachine.ChangeState(enemy.GetHitState);
         }
-        if(enemy.IsAggroed){
+        if (enemy.IsAggroed)
+        {
             enemy.StateMachine.ChangeState(enemy.MoveState);
         }
-        
+
         dir = (targetPos - enemy.transform.position).normalized;
         enemy.MoveEnemy(dir * RandomMovementSpeed);
-        if((enemy.transform.position - targetPos).sqrMagnitude < 0.01f){
+        
+        if ((enemy.transform.position - targetPos).sqrMagnitude < 0.01f)
+        {
             targetPos = GetRandomPointInCircle();
         }
     }
 
-    public override void DoPhysicUpdateLogic(){
+    public override void DoPhysicUpdateLogic()
+    {
         base.DoPhysicUpdateLogic();
     }
 
-    Vector3 GetRandomPointInCircle(){
+    Vector3 GetRandomPointInCircle()
+    {
         return enemy.transform.position + (Vector3)UnityEngine.Random.insideUnitCircle * RandomMovementRange;
     }
 }

@@ -11,7 +11,7 @@ public class HealthText : MonoBehaviour
     public TextMeshProUGUI textMesh;
     RectTransform rectTransform;
     float timeElapsed = 0.0f;
-    // Start is called before the first frame update
+    
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();

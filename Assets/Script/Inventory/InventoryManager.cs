@@ -8,7 +8,6 @@ public class InventoryManager : MonoBehaviour
     public GameObject InventoryMenu;
     public GameObject MessagePanel;
     public TMP_Text messagetext;
-    bool menuActived;
     public NonequipmentSlot[] nonEquipmentSlots;
     public ItemSlot[] itemSlot;
     public bool itemSlotIsFull = false;
@@ -34,17 +33,19 @@ public class InventoryManager : MonoBehaviour
 
     public void OpenAndCloseInventory()
     {
-        if (!menuActived)
+        if (player.canOpenInventory)
         {
             InventoryMenu.SetActive(true);
             Time.timeScale = 0;
-            menuActived = true;
+            player.canUseSkill = false;
+            player.canOpenInventory = false;
         }
         else
         {
             InventoryMenu.SetActive(false);
             Time.timeScale = 1;
-            menuActived = false;
+            player.canUseSkill = true;
+            player.canOpenInventory = true;
         }
     }
 
